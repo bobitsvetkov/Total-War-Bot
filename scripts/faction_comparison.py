@@ -1,14 +1,8 @@
 import json
-import logging
 import os
-from functools import lru_cache
-from typing import Dict, List, Any, Tuple
-import asyncio
-from concurrent.futures import ThreadPoolExecutor
+from typing import Dict, List
 from langchain_ollama import OllamaLLM
-import discord
-from discord.ext import commands, tasks
-import textwrap
+from discord.ext import commands
 from scripts.utils import make_hashable_unit, analyze_faction_weights
 
 class FactionComparisonBot(commands.Cog):

@@ -105,7 +105,7 @@ class FactionAnalysisBot(commands.Cog):
             else:
                 await ctx.send(chunk)
 
-    @commands.command(name='faction_analysis')
+    @commands.command(name='faction_analysis', help='Analyze the strengths and weaknesses of a faction.')
     async def faction_analysis_command(self, ctx, *, faction_name: str):
         if faction_name not in self.factions:
             await ctx.send(f"Faction '{faction_name}' not found.")

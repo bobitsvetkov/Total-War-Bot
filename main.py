@@ -1,5 +1,6 @@
 import discord
 import sys
+from scripts.keep_alive import keep_alive
 import os
 import logging
 import json
@@ -13,7 +14,7 @@ from scripts.faction_comparison import FactionComparisonBot
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 json_path = os.path.join(os.path.dirname(__file__), 'data', 'units_stats.json')
-
+keep_alive()
 # Load unit data from JSON
 with open(json_path) as f:
     unit_data = json.load(f)

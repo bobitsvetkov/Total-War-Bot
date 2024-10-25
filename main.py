@@ -10,16 +10,10 @@ from scripts.unit_comparison import compare_stats_command
 # from scripts.analyze_faction import FactionAnalysisBot  # Adjusted import
 from scripts.bot import FactionAnalysisBot
 from scripts.faction_comparison import FactionComparisonBot
-from flask import Flask, request
-
-
-app = Flask(__name__)
-
-
-
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 json_path = os.path.join(os.path.dirname(__file__), 'data', 'units_stats.json')
+
 # Load unit data from JSON
 with open(json_path) as f:
     unit_data = json.load(f)
@@ -37,14 +31,6 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 # Add commands from other scripts
 bot.add_command(compare_stats_command)
 
-@app.route('/', methods=['GET'])
-def home():
-    return "Bot is running!"
-
-@app.route('/webhook', methods=['POST'])
-def webhook():
-    # Handle incoming requests (e.g., Discord interactions)
-    return "Webhook received!", 200
 
 # Create a setup function for adding the FactionAnalysisBot
 async def setup_bot():
@@ -85,8 +71,6 @@ async def send_tierlist(ctx):
     else:
         # Send an error message if the image is not found
         await ctx.send("Tier list image not found!")
-def run_bot():
-    bot.run(os.environ['DISCORD_TOKEN'])  # Access the environment variable from Vercel
 
-if __name__ == '__main__':
-    run_bot()
+# Run the bot
+bot.run(str(bot_token))

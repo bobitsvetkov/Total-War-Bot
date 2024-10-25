@@ -28,16 +28,15 @@ def query_unit_stats(unit_name):
 def compare_stats(unit1, unit2):
     """Generate a modern-styled comparison image for damage stats."""
     plt.style.use('ggplot')
-
     fig, ax = plt.subplots(figsize=(20, 8), dpi=100)
 
     # Define stats and get values
     stats = ['Base Damage', 'AP Damage', 'Weapon Damage',
              'Bonus vs Large', 'Bonus vs Infantry',
              'Charge Bonus', 'Melee Defense', 'Melee Attack',
-             'Armor', 'HP', 'Morale','Missile Block Chance', 'Base Missile Damage',
+             'Armor', 'HP', 'Morale','Range', 'Base Missile Damage',
              'AP Missile Damage', 'Total Missile Damage',
-             'Range', 'Ammo']
+             'Missile Block Chance', 'Ammo']
 
     unit1_stats = [unit1.get(stat, 0) for stat in stats]
     unit2_stats = [unit2.get(stat, 0) for stat in stats]

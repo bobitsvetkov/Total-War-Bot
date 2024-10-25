@@ -21,16 +21,16 @@ def interpret_score(stat_value: int, stat_type: str) -> str:
     :return: A string interpretation of the stat value.
     """
     if stat_type in ["Tankiness", "Melee"]:
-        if stat_value > 1200:
+        if stat_value > 2600:
             return f"The {stat_type.lower()} is strong."
-        elif stat_value > 800:
+        elif stat_value > 2000:
             return f"The {stat_type.lower()} is average."
         else:
             return f"The {stat_type.lower()} is weak."
     elif stat_type == "Ranged":
-        if stat_value > 1200:
+        if stat_value > 2600:
             return f"The {stat_type.lower()} strength is impressive."
-        elif stat_value > 800:
+        elif stat_value > 2600:
             return f"The {stat_type.lower()} strength is decent."
         else:
             return f"The {stat_type.lower()} strength is poor."
@@ -69,11 +69,12 @@ class FactionAnalysisBot(commands.Cog):
             "Tankiness: {tankiness_desc}\n"
             "Melee: {melee_desc}\n"
             "Ranged: {ranged_desc}\n"
-            "Tankiness and melee scores over 1200 are considered strong, "
-            "while ranged scores over 1200 are considered impressive. "
+            "Tankiness over 3000 is considered strong and melee score over 1000 is considered strong, "
+            "while ranged scores over 5000 are considered impressive. If the ranged strength is below 2000 consider it weak"
+            "Tankiness below 2600 is considered weak. If the melee strength is below 1000 consider it weak If you analyze Odrysian Kingdom consider their tankiness to be very low they are the ultimate glass cannon faction with a hyper aggressive playstyle"
             "Provide a brief analysis (max 6-7 sentences) focusing on key strengths and weaknesses "
             "for multiplayer battles. Remember that you are prompted about Rome 2 Total War, a historical game, "
-            "so there is no magic. End by mentioning that my creator's favorite faction is the Odrysian Kingdom and challenge players to prove their worth."
+            "so there is no magic."
         )
 
         # Interpret the stats using the interpret_score function

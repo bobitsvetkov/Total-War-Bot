@@ -4,11 +4,11 @@ import logging
 # Define weights and special units here
 WEIGHTS = {
             "tankiness": {
-                "Missile Block Chance": 5.0,
-                "HP": 10.0,
-                "Armor": 5.0,
-                "Morale": 3.0,
-                "Melee Defense": 4.0,
+                "Missile Block Chance": 17.0,
+                "HP": 20.0,
+                "Armor": 8.0,
+                "Morale": 6.0,
+                "Melee Defense": 8.0,
             },
             "melee": {
                 "Melee Attack": 20.0,
@@ -19,12 +19,12 @@ WEIGHTS = {
                 'Bonus vs Large': 10.0,
             },
             "ranged": {
-                "Base Missile Damage": 3.7,
-                "AP Missile Damage": 3.7,
-                "Total Missile Damage": 3.7,
-                "Ammo": 5.0,
+                "Base Missile Damage": 2.0,
+                "AP Missile Damage": 4.0,
+                "Total Missile Damage": 4.0,
+                "Ammo": 15.0,
                 "Accuracy": 2.0,
-                "Range": 5.0
+                "Range": 15.0
             }
 }
 
@@ -52,7 +52,7 @@ SPECIAL_UNITS = {
         "ranged_strength": 5.0
     },
     "Cimmerian Heavy Archers": {
-        "ranged_strength": 5.0
+        "ranged_strength": 3.0
     },
     "Nabataean Heavy Archers": {
         "ranged_strength": 5.0
@@ -64,13 +64,36 @@ SPECIAL_UNITS = {
         "ranged_strength": 5.0
     },
     "Thracian Nobles": {
-        "melee_strength": 10.0
+        "melee_strength": 10.0,
     },
     "Auxiliary Balearic Slingers": {
         "ranged_strength": 5.0,
     },
     "Mercenary Balearic Slingers": {
         "ranged_strength": 5.0,
+    },
+    "Mercenary Syrian Archers": {
+        "ranged_strength": 5.0,
+    },
+    "Balearic Slingers": {
+        "ranged_strength": 5.0,
+    },
+    "Veteran Shield Warriors": {
+        "melee_strength": 4.0,
+    },
+    "Galatian Legionaries": {
+        "melee_strength": 4.0,
+        "tankiness": 2.0
+    },
+    "Chosen Sword Band": {
+        "melee_strength": 2.5,
+        "tankiness": 1.0
+    },
+    "Briton Slingers": {
+        "ranged_strength": 3.0,
+    },
+    "Chosen Swordsmen": {
+        "melee_strength": 3.0,
     }
 }
 

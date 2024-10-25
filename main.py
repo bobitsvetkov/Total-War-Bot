@@ -20,8 +20,10 @@ json_path = os.path.join(os.path.dirname(__file__), 'data', 'units_stats.json')
 with open(json_path) as f:
     unit_data = json.load(f)
 
+# Load environment variables
 load_dotenv("secret.env")
 bot_token = os.getenv("BOT_TOKEN")
+channel_id = int(os.getenv("CHANNEL", "0"))  # Ensure conversion to integer
 
 # Define intents
 intents = discord.Intents.default()
@@ -33,6 +35,16 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 # Add commands from other scripts
 bot.add_command(compare_stats_command)
 
+# Helper function to restrict commands to a specific channel
+async def is_in_correct_channel(ctx):
+    if ctx.channel.id == channel_id:
+        return True
+    else:
+        # Notify the user they are in the wrong channel
+        allowed_channel = bot.get_channel(channel_id)
+        await ctx.send(f"Please use bot commands in {allowed_channel.mention}.")
+        return False
+
 # Setup function for adding all cogs
 async def setup_bot():
     await bot.add_cog(FactionAnalysisBot(bot))
@@ -41,11 +53,12 @@ async def setup_bot():
     await bot.add_cog(TierListCog(bot))
     await bot.add_cog(CommandsListCog(bot))
 
-# This will run the setup before the bot starts
+# Event to indicate the bot is ready
 @bot.event
 async def on_ready():
     logging.info(f'Bot is ready. Logged in as {bot.user}')
-    # Add all cogs after the bot is ready
+    # Apply the channel check to all commands
+    bot.add_check(is_in_correct_channel)
     await setup_bot()
 
 # Run the bot

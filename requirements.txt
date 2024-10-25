@@ -1,3 +1,5 @@
 discord.py
 langchain-ollama
 flask
+matplotlib
+numpy

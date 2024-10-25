@@ -4,20 +4,19 @@ import logging
 # Define weights and special units here
 WEIGHTS = {
             "tankiness": {
-                "Missile Block Chance": 4.0,
-                "HP": 4.0,
+                "Missile Block Chance": 5.0,
+                "HP": 10.0,
                 "Armor": 5.0,
-                "Morale": 5.0,
+                "Morale": 3.0,
                 "Melee Defense": 4.0,
             },
             "melee": {
                 "Melee Attack": 20.0,
-                "Base Damage": 2.5,
-                "AP Damage": 2.7,
-                "Weapon Damage": 2.4,
-                "Charge Bonus": 10,
-                'Bonus vs Infantry': 100,
-                'Bonus vs Large': 20,
+                "Base Damage": 10.0,
+                "AP Damage": 13.0,
+                "Charge Bonus": 7.0,
+                'Bonus vs Infantry': 12.0,
+                'Bonus vs Large': 10.0,
             },
             "ranged": {
                 "Base Missile Damage": 3.7,
@@ -31,10 +30,10 @@ WEIGHTS = {
 
 SPECIAL_UNITS = {
     "Mercenary Cretan Archers": {
-        "ranged_strength": 3.0
+        "ranged_strength": 5.0
     },
     "Cretan Archers": {
-        "ranged_strength": 3.0
+        "ranged_strength": 5.0
     },
     "Evocati Cohort": {
         "melee_strength": 3.0,
@@ -47,7 +46,7 @@ SPECIAL_UNITS = {
         "melee_strength": 3.0
     },
     "Rhodian Slingers": {
-        "ranged_strength": 3.0
+        "ranged_strength": 5.0
     },
     "Syrian Heavy Archers": {
         "ranged_strength": 5.0
@@ -59,19 +58,19 @@ SPECIAL_UNITS = {
         "ranged_strength": 5.0
     },
     "Auxiliary Syrian Archers": {
-        "ranged_strength": 3.0
+        "ranged_strength": 5.0
     },
     "Mercenary Rhodian Slingers": {
-        "ranged_strength": 3.0
+        "ranged_strength": 5.0
     },
     "Thracian Nobles": {
         "melee_strength": 10.0
     },
     "Auxiliary Balearic Slingers": {
-        "ranged_strength": 3.0,
+        "ranged_strength": 5.0,
     },
     "Mercenary Balearic Slingers": {
-        "ranged_strength": 3.0,
+        "ranged_strength": 5.0,
     }
 }
 

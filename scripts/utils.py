@@ -52,6 +52,9 @@ SPECIAL_UNITS = {
     "Cimmerian Heavy Archers": {
         "ranged_strength": 5.0
     },
+    "Nabataean Heavy Archers": {
+        "ranged_strength": 5.0
+    },
     "Auxiliary Syrian Archers": {
         "ranged_strength": 3.0
     },

@@ -49,6 +49,9 @@ SPECIAL_UNITS = {
     "Rhodian Slingers": {
         "ranged_strength": 3.0
     },
+    "Syrian Heavy Archers": {
+        "ranged_strength": 5.0
+    },
     "Cimmerian Heavy Archers": {
         "ranged_strength": 5.0
     },

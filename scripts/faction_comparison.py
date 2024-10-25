@@ -126,7 +126,7 @@ class FactionComparisonBot(commands.Cog):
                                "- `!faction_compare Faction1 vs Faction2`\n"
                                "- `!faction_compare Faction1 and Faction2`\n"
                                "- `!faction_compare Faction1, Faction2`\n"
-                               "Example: `!faction_compare Roman Faction vs Barbarian Faction`")
+                               "Example: `!faction_compare Odrysian Kingdom vs Rome`")
                 return
 
         # Trim whitespace

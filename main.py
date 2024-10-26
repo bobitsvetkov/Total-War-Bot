@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 from scripts.unit_comparison import compare_stats_command
 from scripts.bot import FactionAnalysisBot
 from scripts.faction_comparison import FactionComparisonBot
-
+from cogs.leaderboard_system import LeaderboardSystem
 from cogs.unit_stats import UnitStatsCog
 from cogs.tier_list import TierListCog
 from cogs.commands_list import CommandsListCog
@@ -37,7 +37,7 @@ bot.add_command(compare_stats_command)
 
 # Helper function to restrict commands to a specific channel
 async def is_in_correct_channel(ctx):
-    if ctx.channel.id == channel_id:
+    if ctx.channel.id == channel_id or ctx.channel.id == 524522932823785485:
         return True
     else:
         # Notify the user they are in the wrong channel
@@ -52,6 +52,7 @@ async def setup_bot():
     await bot.add_cog(UnitStatsCog(bot))
     await bot.add_cog(TierListCog(bot))
     await bot.add_cog(CommandsListCog(bot))
+    await bot.add_cog(LeaderboardSystem(bot))
 
 # Event to indicate the bot is ready
 @bot.event

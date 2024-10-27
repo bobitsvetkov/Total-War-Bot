@@ -12,6 +12,7 @@ from cogs.unit_stats import UnitStatsCog
 from cogs.tier_list import TierListCog
 from cogs.commands_list import CommandsListCog
 from cogs.player_profile import PlayerProfile
+from cogs.historical_results import HistoricalResults
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -56,6 +57,7 @@ async def setup_bot():
     await bot.add_cog(CommandsListCog(bot))
     await bot.add_cog(LeaderboardSystem(bot))
     await bot.add_cog(PlayerProfile(bot))
+    await bot.add_cog(HistoricalResults(bot))
 
 # Event to indicate the bot is ready
 @bot.event

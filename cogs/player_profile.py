@@ -27,7 +27,7 @@ class PlayerProfile(commands.Cog):
                 "Usage: `!set_profile <key> <value>`\n"
                 "Available keys:\n"
                 "`fav_faction`: Set your favorite faction.\n"
-                "`fav_unit`: Set your favorite unit (comma-separated).\n"
+                "`fav_units`: Set your favorite unit (comma-separated).\n"
                 "`bio`: Set your bio.\n"
                 "`playstyle`: Set your playstyle.\n"
                 "`fav_map`: Set your favorite map.\n"

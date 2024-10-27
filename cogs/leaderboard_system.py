@@ -159,11 +159,9 @@ class LeaderboardSystem(commands.Cog):
                 value=(
                     f"Games Played: **{player['Games Played']}**\n"
                     f"Win Rate: **{win_rate:.1f}%**\n"
-                    f"DC's/Forfeits: **{player['DC\'s/Forfeits']}**"
                 ),
                 inline=True
             )
-
             await ctx.send(embed=embed)
 
         except Exception as e:

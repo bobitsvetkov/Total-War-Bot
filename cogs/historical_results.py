@@ -38,18 +38,18 @@ class HistoricalResults(commands.Cog):
         rating = base_rating + (win_percentage * 5) + (float(player_data.get('K/D ratio', 0) or 0) * 100)
         rating += float(player_data.get('Chevrons/game', 0) or 0) * 25
 
-        if player_data.get('Championships'):
-            rating *= 1.5
-        if player_data.get('Runner-ups'):
-            rating *= 1.3
-        if player_data.get('Third Places'):
-            rating *= 1.2
-        if player_data.get('Top 3 Best KD Ratios'):
-            rating *= 1.1
-        if player_data.get('Top 3 Most Chevrons/Game'):
-            rating *= 1.1
-        if playoff_rate >= 75:
-            rating *= 1.1
+        # Factor in the number of championships, runner-ups, etc.
+        championships = int(player_data.get('Championships', 0) or 0)
+        runner_ups = int(player_data.get('Runner-ups', 0) or 0)
+        third_places = int(player_data.get('Third Places', 0) or 0)
+        top_3_best_kd_ratios = int(player_data.get('Top 3 Best KD Ratios', 0) or 0)
+        top_3_most_chevrons_game = int(player_data.get('Top 3 Most Chevrons/Game', 0) or 0)
+
+        rating += championships * 30  # Adjust the multiplier as needed
+        rating += runner_ups * 20  # Adjust the multiplier as needed
+        rating += third_places * 10  # Adjust the multiplier as needed
+        rating += top_3_best_kd_ratios * 5  # Adjust the multiplier as needed
+        rating += top_3_most_chevrons_game * 5  # Adjust the multiplier as needed
 
         rating *= performance_multiplier
         return round(rating, 2)

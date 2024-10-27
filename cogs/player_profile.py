@@ -6,7 +6,7 @@ import os
 class PlayerProfile(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        self.profile_data_path = 'data/player_profiles.json'
+        self.profile_data_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'player_profiles.json')
         if not os.path.exists(self.profile_data_path):
             with open(self.profile_data_path, 'w') as f:
                 json.dump({}, f)
@@ -80,7 +80,7 @@ class PlayerProfile(commands.Cog):
 
         profile = profiles[user_id]
         embed = discord.Embed(
-            title=f"{member.display_name}'s Profile" if member else f"Your Profile", 
+            title=f"{member.display_name}'s Profile" if member else f"Your Profile",
             color=discord.Color.blue()
         )
         

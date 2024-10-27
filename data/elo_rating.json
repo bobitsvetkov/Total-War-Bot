@@ -1,0 +1,650 @@
+{
+    "teams": [
+        {
+            "Team Name": "Perkele",
+            "Elo Rating": 1025.01810245825,
+            "Matches": [
+                {
+                    "Opponent": "Parthia's Finest",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Parthia's Finest",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Devious Dingalings",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Devious Dingalings",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Flaming Dragons",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Flaming Dragons",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Deuteronomy23:1",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Peppa Pig Fan Club",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Parthia's Finest",
+            "Elo Rating": 1039.3877490270581,
+            "Matches": [
+                {
+                    "Opponent": "Perkele",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Perkele",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Flaming Dragons",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Flaming Dragons",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Devious Dingalings",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Devious Dingalings",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Peppa Pig Fan Club",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Devious Dingalings",
+            "Elo Rating": 969.4509564901061,
+            "Matches": [
+                {
+                    "Opponent": "Flaming Dragons",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Flaming Dragons",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Perkele",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Perkele",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Parthia's Finest",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Parthia's Finest",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Flaming Dragons",
+            "Elo Rating": 948.0706497396543,
+            "Matches": [
+                {
+                    "Opponent": "Devious Dingalings",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Devious Dingalings",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Parthia's Finest",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Parthia's Finest",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Perkele",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Perkele",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Rice Enjoyers",
+            "Elo Rating": 1051.8459216434894,
+            "Matches": [
+                {
+                    "Opponent": "Comrades in Arms",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Comrades in Arms",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Wolf Gang",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Wolf Gang",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gallici Corvi",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gallici Corvi",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Make Siege Players Mald Again",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Peppa Pig Fan Club",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gorilla Tactics",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Comrades in Arms",
+            "Elo Rating": 1062.7598690697957,
+            "Matches": [
+                {
+                    "Opponent": "Rice Enjoyers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Rice Enjoyers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gallici Corvi",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gallici Corvi",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Wolf Gang",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Wolf Gang",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gorilla Tactics",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Wolf Gang",
+            "Elo Rating": 929.6082923907886,
+            "Matches": [
+                {
+                    "Opponent": "Gallici Corvi",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gallici Corvi",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gallici Corvi",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Rice Enjoyers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Rice Enjoyers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Comrades in Arms",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Comrades in Arms",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Gallici Corvi",
+            "Elo Rating": 990.5786494634294,
+            "Matches": [
+                {
+                    "Opponent": "Wolf Gang",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Wolf Gang",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Wolf Gang",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Comrades in Arms",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Comrades in Arms",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Rice Enjoyers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Rice Enjoyers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Duck Hunters",
+            "Elo Rating": 959.8009878675824,
+            "Matches": [
+                {
+                    "Opponent": "Gorilla Tactics",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gorilla Tactics",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "CapNSpawn",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Make Siege Players Mald Again",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Make Siege Players Mald Again",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Gorilla Tactics",
+            "Elo Rating": 1028.2050753475355,
+            "Matches": [
+                {
+                    "Opponent": "Duck Hunters",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Duck Hunters",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "CapNSpawn",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "CapNSpawn",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Make Siege Players Mald Again",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Make Siege Players Mald Again",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Comrades in Arms",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Rice Enjoyers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "CapNSpawn",
+            "Elo Rating": 929.4810375462737,
+            "Matches": [
+                {
+                    "Opponent": "Duck Hunters",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gorilla Tactics",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gorilla Tactics",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Make Siege Players Mald Again",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Make Siege Players Mald Again",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Make Siege Players Mald Again",
+            "Elo Rating": 1064.7237922024767,
+            "Matches": [
+                {
+                    "Opponent": "CapNSpawn",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "CapNSpawn",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Duck Hunters",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Duck Hunters",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gorilla Tactics",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gorilla Tactics",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Rice Enjoyers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Samba Stars",
+            "Elo Rating": 942.6823482024458,
+            "Matches": [
+                {
+                    "Opponent": "Deuteronomy23:1",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Deuteronomy23:1",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Peppa Pig Fan Club",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Peppa Pig Fan Club",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Endless",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Endless",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Deuteronomy23:1",
+            "Elo Rating": 1016.9594684070476,
+            "Matches": [
+                {
+                    "Opponent": "Samba Stars",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Samba Stars",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Endless",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Endless",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Peppa Pig Fan Club",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Peppa Pig Fan Club",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Perkele",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "The Endless",
+            "Elo Rating": 1001.3327000289418,
+            "Matches": [
+                {
+                    "Opponent": "Peppa Pig Fan Club",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Peppa Pig Fan Club",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Deuteronomy23:1",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Deuteronomy23:1",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Samba Stars",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Samba Stars",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Peppa Pig Fan Club",
+            "Elo Rating": 1040.0944001151245,
+            "Matches": [
+                {
+                    "Opponent": "The Endless",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Endless",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Samba Stars",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Samba Stars",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Deuteronomy23:1",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Deuteronomy23:1",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Parthia's Finest",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Rice Enjoyers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Perkele",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                }
+            ]
+        }
+    ]
+}

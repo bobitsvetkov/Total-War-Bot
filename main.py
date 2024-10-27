@@ -13,6 +13,7 @@ from cogs.tier_list import TierListCog
 from cogs.commands_list import CommandsListCog
 from cogs.player_profile import PlayerProfile
 from cogs.historical_results import HistoricalResults
+from cogs.elo_test import TeamLeaderboardSystem
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -58,6 +59,7 @@ async def setup_bot():
     await bot.add_cog(LeaderboardSystem(bot))
     await bot.add_cog(PlayerProfile(bot))
     await bot.add_cog(HistoricalResults(bot))
+    await bot.add_cog(TeamLeaderboardSystem(bot))
 
 # Event to indicate the bot is ready
 @bot.event

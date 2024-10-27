@@ -11,6 +11,7 @@ from cogs.leaderboard_system import LeaderboardSystem
 from cogs.unit_stats import UnitStatsCog
 from cogs.tier_list import TierListCog
 from cogs.commands_list import CommandsListCog
+from cogs.player_profile import PlayerProfile
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -34,6 +35,7 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 
 # Add commands from other scripts
 bot.add_command(compare_stats_command)
+# bot.add_cog(PlayerProfile(bot))
 
 # Helper function to restrict commands to a specific channel
 async def is_in_correct_channel(ctx):
@@ -53,6 +55,7 @@ async def setup_bot():
     await bot.add_cog(TierListCog(bot))
     await bot.add_cog(CommandsListCog(bot))
     await bot.add_cog(LeaderboardSystem(bot))
+    await bot.add_cog(PlayerProfile(bot))
 
 # Event to indicate the bot is ready
 @bot.event

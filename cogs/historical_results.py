@@ -45,12 +45,12 @@ class HistoricalResults(commands.Cog):
         top_3_best_kd_ratios = int(player_data.get('Top 3 Best KD Ratios', 0) or 0)
         top_3_most_chevrons_game = int(player_data.get('Top 3 Most Chevrons/Game', 0) or 0)
 
-        rating += championships * 30  # Adjust the multiplier as needed
-        rating += runner_ups * 20  # Adjust the multiplier as needed
-        rating += third_places * 10  # Adjust the multiplier as needed
-        rating += top_3_best_kd_ratios * 5  # Adjust the multiplier as needed
-        rating += top_3_most_chevrons_game * 5  # Adjust the multiplier as needed
-
+        rating += championships * 30
+        rating += runner_ups * 20
+        rating += third_places * 10
+        rating += top_3_best_kd_ratios * 5
+        rating += top_3_most_chevrons_game * 5
+        rating += playoff_rate * 3
         rating *= performance_multiplier
         return round(rating, 2)
 

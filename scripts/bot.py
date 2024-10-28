@@ -13,81 +13,50 @@ from scripts.utils import make_hashable_unit, analyze_faction_weights
 executor = ThreadPoolExecutor(max_workers=4)
 
 def interpret_score(stat_value: int, stat_type: str) -> str:
-    """
-    Interprets the given stat value based on the type of stat.
-    
-    :param stat_value: The numerical value of the stat.
-    :param stat_type: The type of stat being interpreted (e.g., "Tankiness", "Melee", "Ranged").
-    :return: A string interpretation of the stat value.
-    """
-    if stat_type in ["Tankiness", "Melee"]:
-        if stat_value > 2600:
-            return f"The {stat_type.lower()} is strong."
-        elif stat_value > 2000:
-            return f"The {stat_type.lower()} is average."
-        else:
-            return f"The {stat_type.lower()} is weak."
-    elif stat_type == "Ranged":
-        if stat_value > 2600:
-            return f"The {stat_type.lower()} strength is impressive."
-        elif stat_value > 2600:
-            return f"The {stat_type.lower()} strength is decent."
-        else:
-            return f"The {stat_type.lower()} strength is poor."
-    else:
-        return f"Unknown stat type: {stat_type}"
+    """Interpret the given stat value based on the type of stat."""
+    thresholds = {
+        "Tankiness": [(2600, "weak"), (3000, "average"), (float("inf"), "strong")],
+        "Melee": [(1000, "weak"), (2600, "average"), (float("inf"), "strong")],
+        "Ranged": [(2000, "poor"), (2600, "decent"), (float("inf"), "impressive")]
+    }
+
+    for threshold, descriptor in thresholds.get(stat_type, []):
+        if stat_value <= threshold:
+            return f"The {stat_type.lower()} is {descriptor}."
+    return f"Unknown stat type: {stat_type}"
 
 class FactionAnalysisBot(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        self.faction_cache = {}
         self.analysis_cache = {}
-        self.model = OllamaLLM(
-            model="llama3",
-            temperature=0.7,
-            num_ctx=2048,
-        )
+        self.model = OllamaLLM(model="llama3", temperature=0.7, num_ctx=2048)
         
         # Load unit data
         json_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'units_stats.json')
         with open(json_path, 'r') as f:
             self.unit_data = json.load(f)
         
-        self.factions = {}
-        self._group_units_by_faction()
+        self.factions = self._group_units_by_faction()
 
     def _group_units_by_faction(self):
+        factions = {}
         for unit in self.unit_data:
-            faction = unit["Faction"]
-            if faction not in self.factions:
-                self.factions[faction] = []
-            self.factions[faction].append(unit)
+            factions.setdefault(unit["Faction"], []).append(unit)
+        return factions
 
     async def generate_analysis(self, faction_name: str, stats: dict) -> str:
         template = (
             "Analyze the {faction_name} faction with these stats:\n"
-            "Tankiness: {tankiness_desc}\n"
-            "Melee: {melee_desc}\n"
-            "Ranged: {ranged_desc}\n"
-            "Tankiness over 3000 is considered strong and melee score over 1000 is considered strong, "
-            "while ranged scores over 5000 are considered impressive. If the ranged strength is below 2000 consider it weak"
-            "Tankiness below 2600 is considered weak. If the melee strength is below 1000 consider it weak If you analyze Odrysian Kingdom consider their tankiness to be very low they are the ultimate glass cannon faction with a hyper aggressive playstyle"
-            "Provide a brief analysis (max 6-7 sentences) focusing on key strengths and weaknesses "
-            "for multiplayer battles. Remember that you are prompted about Rome 2 Total War, a historical game, "
-            "so there is no magic."
+            "Tankiness: {tankiness_desc}\nMelee: {melee_desc}\nRanged: {ranged_desc}\n"
+            "Tankiness over 3000 is strong, melee score over 1000 is strong, and ranged scores over 5000 are impressive. "
+            "For multiplayer battles, focus on key strengths and weaknesses. Odrysian Kingdom is a glass cannon with very low tankiness."
         )
 
-        # Interpret the stats using the interpret_score function
-        tankiness_desc = interpret_score(stats['tankiness'], 'Tankiness')
-        melee_desc = interpret_score(stats['melee_strength'], 'Melee')
-        ranged_desc = interpret_score(stats['ranged_strength'], 'Ranged')
-
-        # Format the prompt with interpreted scores
         prompt = template.format(
             faction_name=faction_name,
-            tankiness_desc=tankiness_desc,
-            melee_desc=melee_desc,
-            ranged_desc=ranged_desc
+            tankiness_desc=interpret_score(stats['tankiness'], 'Tankiness'),
+            melee_desc=interpret_score(stats['melee_strength'], 'Melee'),
+            ranged_desc=interpret_score(stats['ranged_strength'], 'Ranged')
         )
 
         try:
@@ -99,12 +68,22 @@ class FactionAnalysisBot(commands.Cog):
             return "Error generating analysis. Please try again."
 
     async def send_long_message(self, ctx, faction_name: str, content: str):
+        """Send a long message in chunks to avoid character limits."""
         chunks = textwrap.wrap(content, 1900, replace_whitespace=False)
-        for i, chunk in enumerate(chunks):
-            if i == 0:
-                await ctx.send(f"**Analysis for {faction_name}:**\n{chunk}")
-            else:
-                await ctx.send(chunk)
+        await ctx.send(f"**Analysis for {faction_name}:**")
+        for chunk in chunks:
+            await ctx.send(chunk)
+
+    async def get_or_generate_analysis(self, faction_name: str) -> str:
+        """Retrieve cached analysis or generate new analysis for a faction."""
+        if faction_name in self.analysis_cache:
+            return self.analysis_cache[faction_name]
+        
+        units_tuple = tuple(make_hashable_unit(unit) for unit in self.factions[faction_name])
+        stats = analyze_faction_weights(units_tuple)
+        analysis = await self.generate_analysis(faction_name, stats)
+        self.analysis_cache[faction_name] = analysis
+        return analysis
 
     @commands.command(name='faction_analysis', help='Analyze the strengths and weaknesses of a faction.')
     async def faction_analysis_command(self, ctx, *, faction_name: str):
@@ -114,16 +93,8 @@ class FactionAnalysisBot(commands.Cog):
 
         async with ctx.typing():
             try:
-                if faction_name in self.analysis_cache:
-                    analysis = self.analysis_cache[faction_name]
-                else:
-                    units_tuple = tuple(make_hashable_unit(unit) for unit in self.factions[faction_name])
-                    stats = analyze_faction_weights(units_tuple)
-                    analysis = await self.generate_analysis(faction_name, stats)
-                    self.analysis_cache[faction_name] = analysis
-
+                analysis = await self.get_or_generate_analysis(faction_name)
                 await self.send_long_message(ctx, faction_name, analysis)
-
             except Exception as e:
                 logging.error(f"Error analyzing faction {faction_name}: {e}")
                 await ctx.send(f"Error analyzing faction {faction_name}. Please try again later.")

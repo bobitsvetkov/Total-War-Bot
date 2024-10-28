@@ -36,7 +36,6 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 
 # Add commands from other scripts
 bot.add_command(compare_stats_command)
-# bot.add_cog(PlayerProfile(bot))
 
 # Helper function to restrict commands to a specific channel
 async def is_in_correct_channel(ctx):

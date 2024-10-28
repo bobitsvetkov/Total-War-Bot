@@ -13,32 +13,27 @@ class HistoricalResults(commands.Cog):
         base_rating = 1000.0
 
         def parse_percentage(percentage_str):
-            # Return 0.0 for empty strings or None
             if not percentage_str:
                 return 0.0
 
-            # If it's an integer or float already, convert to float
             if isinstance(percentage_str, (int, float)):
                 return float(percentage_str)
-            
-            # Strip whitespace and remove '%' sign
+
             percentage_str = percentage_str.strip().strip('%')
 
-            # Try converting to float
             try:
                 return float(percentage_str)
             except ValueError:
-                return 0.0  # Return 0.0 for any non-convertible values
+                return 0.0
 
         win_percentage = parse_percentage(player_data.get('Win %', ''))
         playoff_rate = parse_percentage(player_data.get('Playoff Rate', ''))
-        games_played = int(player_data.get('Games Played', 0) or 0)  # Ensure it's 0 if None or empty
+        games_played = int(player_data.get('Games Played', 0) or 0)
 
-        performance_multiplier = 0.5 if games_played < 10 else 1.0
+        performance_multiplier = 0.5 if games_played < 20 else 1.0
         rating = base_rating + (win_percentage * 5) + (float(player_data.get('K/D ratio', 0) or 0) * 100)
         rating += float(player_data.get('Chevrons/game', 0) or 0) * 25
 
-        # Factor in the number of championships, runner-ups, etc.
         championships = int(player_data.get('Championships', 0) or 0)
         runner_ups = int(player_data.get('Runner-ups', 0) or 0)
         third_places = int(player_data.get('Third Places', 0) or 0)
@@ -60,11 +55,15 @@ class HistoricalResults(commands.Cog):
 
         leaderboard = []
         for player in players_data:
+            games_played = int(player.get('Games Played', 0) or 0)
+            if games_played < 10:
+                continue  # Skip players with less than 10 games played
+
             rating = self.calculate_player_rating(player)
             leaderboard.append({
                 'Player': player['Player'],
                 'Rating': rating,
-                'Games Played': player['Games Played'],
+                'Games Played': games_played,
                 'Win %': player['Win %'],
                 'K/D ratio': player['K/D ratio'],
                 'Chevrons/game': player['Chevrons/game'],
@@ -121,10 +120,64 @@ class HistoricalResults(commands.Cog):
         leaderboard = self.generate_leaderboard()
         embed = discord.Embed(title="Top Players Leaderboard", color=discord.Color.gold())
         
-        for rank, player in enumerate(leaderboard[:15], 1):  # Show top 15 players
+        for rank, player in enumerate(leaderboard[:15], 1):
             embed.add_field(
                 name=f"{rank}. {player['Player']}",
                 value=f"Rating: {player['Rating']}, Win %: {player['Win %']}, K/D Ratio: {player['K/D ratio']}",
+                inline=False
+            )
+        
+        await ctx.send(embed=embed)
+
+    def generate_metric_leaderboard(self, metric_key):
+        """Generates leaderboard based on a specific metric."""
+        with open(self.player_data_path, 'r') as f:
+            players_data = json.load(f)
+
+        def parse_metric(value):
+            if metric_key in ["Win %", "Playoff Rate"]:
+                return float(value.strip('%')) if value else 0.0
+            else:
+                return float(value) if value else 0.0
+
+        leaderboard = [
+            {
+                'Player': player['Player'],
+                metric_key: parse_metric(player.get(metric_key, '0')),
+                'Games Played': int(player.get('Games Played', 0) or 0)
+            }
+            for player in players_data
+            if int(player.get('Games Played', 0) or 0) >= 20
+        ]
+
+        leaderboard.sort(key=lambda x: x[metric_key], reverse=True)
+        return leaderboard
+
+    @commands.command(name='win_percentage_leaderboard')
+    async def win_percentage_leaderboard(self, ctx):
+        """Display leaderboard by Win %."""
+        leaderboard = self.generate_metric_leaderboard("Win %")
+        embed = discord.Embed(title="Top Players by Win %", color=discord.Color.blue())
+        
+        for rank, player in enumerate(leaderboard[:10], 1):
+            embed.add_field(
+                name=f"{rank}. {player['Player']}",
+                value=f"Win %: {player['Win %']}%",
+                inline=False
+            )
+        
+        await ctx.send(embed=embed)
+        
+    @commands.command(name='kd_ratio_leaderboard')
+    async def kd_ratio_leaderboard(self, ctx):
+        """Display leaderboard by K/D Ratio."""
+        leaderboard = self.generate_metric_leaderboard("K/D ratio")
+        embed = discord.Embed(title="Top Players by K/D Ratio", color=discord.Color.purple())
+        
+        for rank, player in enumerate(leaderboard[:10], 1):
+            embed.add_field(
+                name=f"{rank}. {player['Player']}",
+                value=f"K/D Ratio: {player['K/D ratio']}",
                 inline=False
             )
         

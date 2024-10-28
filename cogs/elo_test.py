@@ -23,14 +23,17 @@ class TeamLeaderboardSystem(commands.Cog):
         """Calculate expected score for a team"""
         return 1 / (1 + 10 ** ((opponent_rating - team_rating) / 400))
 
-    def update_elo(self, winning_team: Dict, losing_team: Dict):
+    def update_elo(self, winning_team: Dict, losing_team: Dict, playoff_multiplier: float = 1.0):
         """Update Elo ratings for the winning and losing teams"""
         expected_winner = self.calculate_expected_score(winning_team["Elo Rating"], losing_team["Elo Rating"])
         expected_loser = self.calculate_expected_score(losing_team["Elo Rating"], winning_team["Elo Rating"])
 
+        # Apply multiplier if it's a playoff match
+        adjustment = self.k_factor * playoff_multiplier
+
         # Update ratings
-        winning_team["Elo Rating"] += self.k_factor * (1 - expected_winner)
-        losing_team["Elo Rating"] += self.k_factor * (0 - expected_loser)
+        winning_team["Elo Rating"] += adjustment * (1 - expected_winner)
+        losing_team["Elo Rating"] += adjustment * (0 - expected_loser)
 
     def parse_teams(self, match_details: str):
         """Parse team names from the input using multiple separators"""
@@ -49,11 +52,26 @@ class TeamLeaderboardSystem(commands.Cog):
                 raise ValueError("Unable to parse team names. Use 'vs', 'versus', 'and', or ',' as separators.")
         return team_a.strip(), team_b.strip()
 
+    def add_team_if_not_exists(self, team_name: str):
+        """Add a new team to the data if it doesn't already exist"""
+        if not any(team['Team Name'].lower() == team_name.lower() for team in self.unit_data['teams']):
+            logging.info(f"Adding new team: {team_name}")
+            new_team = {
+                "Team Name": team_name,
+                "Elo Rating": 1000.0,  # Initial Elo rating for new teams
+                "Matches": []
+            }
+            self.unit_data["teams"].append(new_team)
+
     @commands.command(name='record_match')
-    async def record_match(self, ctx, *, match_details: str):
-        """Record the result of a match between two teams using flexible separators"""
+    @commands.is_owner()
+    async def record_match(self, ctx, match_type: str, *, match_details: str):
+        """Record the result of a match between two teams, creating teams if they don't exist"""
         try:
-            logging.debug(f"Starting record_match with input: {match_details}")
+            logging.debug(f"Starting record_match with input: {match_type}, {match_details}")
+
+            # Determine playoff multiplier
+            playoff_multiplier = 1.5 if match_type.lower() == "playoff" else 1.0
 
             # Parse team names
             try:
@@ -62,31 +80,22 @@ class TeamLeaderboardSystem(commands.Cog):
                 await ctx.send(str(e))
                 return
 
-            logging.debug(f"Winning team: {winning_team_name}, Losing team: {losing_team_name}")
-            teams = self.unit_data["teams"]
+            # Ensure both teams exist in the data
+            self.add_team_if_not_exists(winning_team_name)
+            self.add_team_if_not_exists(losing_team_name)
 
             # Look up the winning and losing teams
-            winning_team = next((t for t in teams if t['Team Name'].lower() == winning_team_name.lower()), None)
-            losing_team = next((t for t in teams if t['Team Name'].lower() == losing_team_name.lower()), None)
+            teams = self.unit_data["teams"]
+            winning_team = next(t for t in teams if t['Team Name'].lower() == winning_team_name.lower())
+            losing_team = next(t for t in teams if t['Team Name'].lower() == losing_team_name.lower())
 
-            if not winning_team:
-                logging.warning(f"Winning team not found: {winning_team_name}")
-            if not losing_team:
-                logging.warning(f"Losing team not found: {losing_team_name}")
-
-            if not winning_team or not losing_team:
-                await ctx.send("One or both teams not found!")
-                return
-
-            # Update Elo ratings
-            self.update_elo(winning_team, losing_team)
+            self.update_elo(winning_team, losing_team, playoff_multiplier=playoff_multiplier)
 
             # Record the match result
             match_date = str(datetime.date.today())
             winning_team["Matches"].append({"Opponent": losing_team["Team Name"], "Result": "Win", "Date": match_date})
             losing_team["Matches"].append({"Opponent": winning_team["Team Name"], "Result": "Loss", "Date": match_date})
 
-            # Save updated data back to JSON
             with open(self.json_path, 'w') as f:
                 json.dump(self.unit_data, f, indent=4)
 
@@ -95,17 +104,21 @@ class TeamLeaderboardSystem(commands.Cog):
         except Exception as e:
             logging.error("Error in record_match command", exc_info=True)
             await ctx.send(f"Error recording match: {str(e)}")
-
-    @commands.command(name='show_top_teams')
+    @record_match.error
+    async def record_match_error(self, ctx, error):
+        """Handle errors for the record_match command."""
+        if isinstance(error, commands.NotOwner):
+            await ctx.send("Only my creator can use this command.")
+        else:
+            await ctx.send("An error occurred while processing the command.")
+    @commands.command(name='test_team_elo')
     async def show_top_teams(self, ctx):
         """Display the top 10 teams by Elo rating in an embed"""
         try:
             teams = self.unit_data["teams"]
 
-            # Sort teams by Elo rating in descending order
             sorted_teams = sorted(teams, key=lambda x: x["Elo Rating"], reverse=True)[:10]
 
-            # Create embed for top 10 teams
             embed = discord.Embed(title="Top 10 Teams by Elo Rating", color=discord.Color.blue())
             for team in sorted_teams:
                 embed.add_field(name=team["Team Name"], value=f"Elo Rating: {team['Elo Rating']:.2f}", inline=False)

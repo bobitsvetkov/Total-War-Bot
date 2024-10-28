@@ -7,7 +7,6 @@ from dotenv import load_dotenv
 from scripts.unit_comparison import compare_stats_command
 from scripts.bot import FactionAnalysisBot
 from scripts.faction_comparison import FactionComparisonBot
-from cogs.leaderboard_system import LeaderboardSystem
 from cogs.unit_stats import UnitStatsCog
 from cogs.tier_list import TierListCog
 from cogs.commands_list import CommandsListCog
@@ -56,7 +55,6 @@ async def setup_bot():
     await bot.add_cog(UnitStatsCog(bot))
     await bot.add_cog(TierListCog(bot))
     await bot.add_cog(CommandsListCog(bot))
-    await bot.add_cog(LeaderboardSystem(bot))
     await bot.add_cog(PlayerProfile(bot))
     await bot.add_cog(HistoricalResults(bot))
     await bot.add_cog(TeamLeaderboardSystem(bot))

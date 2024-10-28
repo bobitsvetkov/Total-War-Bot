@@ -2,7 +2,7 @@
     "teams": [
         {
             "Team Name": "Perkele",
-            "Elo Rating": 1025.01810245825,
+            "Elo Rating": 1063.0784752306026,
             "Matches": [
                 {
                     "Opponent": "Parthia's Finest",
@@ -43,12 +43,107 @@
                     "Opponent": "Peppa Pig Fan Club",
                     "Result": "Loss",
                     "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Best or Bust",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Best or Bust",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Rice Enjoyers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Rice Enjoyers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Lego Commanders",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Big Dick",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Big Dick",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Team Big Dick",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dump De Genz",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gorilla Tactics",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Parthias' Finest",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Parthias' Finest",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Parthia's Finest",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Parthia's Finest",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Unbiased Mods",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Unbiased Mods",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Will2Kill",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Will2Kill",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Warrior Snails",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
                 }
             ]
         },
         {
             "Team Name": "Parthia's Finest",
-            "Elo Rating": 1039.3877490270581,
+            "Elo Rating": 1162.055338109416,
             "Matches": [
                 {
                     "Opponent": "Perkele",
@@ -82,6 +177,101 @@
                 },
                 {
                     "Opponent": "Peppa Pig Fan Club",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Drunk Peltasts",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Drunk Peltasts",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Resistence",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Resistence",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Legitimately Average 2.0",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Legitimately Average 2.0",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "North Korean Avengers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "North Korean Avengers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Team Big Dick",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gorilla Tactics",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Best or Bust",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Perkele",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Perkele",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Will2Kill",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Will2Kill",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Unbiased Mods",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Unbiased Mods",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Crownless Order",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "I for Imperium",
                     "Result": "Loss",
                     "Date": "2024-10-28"
                 }
@@ -161,7 +351,7 @@
         },
         {
             "Team Name": "Rice Enjoyers",
-            "Elo Rating": 1051.8459216434894,
+            "Elo Rating": 1018.9012935112167,
             "Matches": [
                 {
                     "Opponent": "Comrades in Arms",
@@ -194,7 +384,7 @@
                     "Date": "2024-10-28"
                 },
                 {
-                    "Opponent": "Make Siege Players Mald Again",
+                    "Opponent": "Team Big Dick",
                     "Result": "Win",
                     "Date": "2024-10-28"
                 },
@@ -206,6 +396,16 @@
                 {
                     "Opponent": "Gorilla Tactics",
                     "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Perkele",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Perkele",
+                    "Result": "Loss",
                     "Date": "2024-10-28"
                 }
             ]
@@ -253,7 +453,7 @@
         },
         {
             "Team Name": "Wolf Gang",
-            "Elo Rating": 929.6082923907886,
+            "Elo Rating": 906.5659704582905,
             "Matches": [
                 {
                     "Opponent": "Gallici Corvi",
@@ -287,6 +487,46 @@
                 },
                 {
                     "Opponent": "Comrades in Arms",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Crimson Chickens",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Crimson Chickens",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gorilla Tactics",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gorilla Tactics",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Ursas",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Ursas",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Winged Whumsars",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Winged Whumsars",
                     "Result": "Loss",
                     "Date": "2024-10-28"
                 }
@@ -335,7 +575,7 @@
         },
         {
             "Team Name": "Duck Hunters",
-            "Elo Rating": 959.8009878675824,
+            "Elo Rating": 1015.8684373524417,
             "Matches": [
                 {
                     "Opponent": "Gorilla Tactics",
@@ -353,12 +593,62 @@
                     "Date": "2024-10-28"
                 },
                 {
-                    "Opponent": "Make Siege Players Mald Again",
+                    "Opponent": "Team Big Dick",
                     "Result": "Loss",
                     "Date": "2024-10-28"
                 },
                 {
-                    "Opponent": "Make Siege Players Mald Again",
+                    "Opponent": "Team Big Dick",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Aids Brigade",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Aids Brigade",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Lego Commanders",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Lego Commanders",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Leftovers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Leftovers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "SlumDog Slingers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "SlumDog Slingers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dump De Genz",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dump De Genz",
                     "Result": "Loss",
                     "Date": "2024-10-28"
                 }
@@ -366,7 +656,7 @@
         },
         {
             "Team Name": "Gorilla Tactics",
-            "Elo Rating": 1028.2050753475355,
+            "Elo Rating": 1139.3208758579362,
             "Matches": [
                 {
                     "Opponent": "Duck Hunters",
@@ -389,12 +679,12 @@
                     "Date": "2024-10-28"
                 },
                 {
-                    "Opponent": "Make Siege Players Mald Again",
+                    "Opponent": "Team Big Dick",
                     "Result": "Loss",
                     "Date": "2024-10-28"
                 },
                 {
-                    "Opponent": "Make Siege Players Mald Again",
+                    "Opponent": "Team Big Dick",
                     "Result": "Loss",
                     "Date": "2024-10-28"
                 },
@@ -405,6 +695,106 @@
                 },
                 {
                     "Opponent": "Rice Enjoyers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Winged Whumsars",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Winged Whumsars",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Ursas",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Ursas",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Crimson Chickens",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Crimson Chickens",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Wolf Gang",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Wolf Gang",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Perkele",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Parthia's Finest",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Cimmeria's Chosen",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Thureos Spears in Paris",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Thureos Spears in Paris",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gallici Corvii",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gallici Corvii",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Crownless Order",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Crownless Order",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Legitimately Average 2.0",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Cimmeria's Chosen",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Legitimately Average 2.0",
                     "Result": "Loss",
                     "Date": "2024-10-28"
                 }
@@ -430,20 +820,20 @@
                     "Date": "2024-10-28"
                 },
                 {
-                    "Opponent": "Make Siege Players Mald Again",
+                    "Opponent": "Team Big Dick",
                     "Result": "Loss",
                     "Date": "2024-10-28"
                 },
                 {
-                    "Opponent": "Make Siege Players Mald Again",
+                    "Opponent": "Team Big Dick",
                     "Result": "Loss",
                     "Date": "2024-10-28"
                 }
             ]
         },
         {
-            "Team Name": "Make Siege Players Mald Again",
-            "Elo Rating": 1064.7237922024767,
+            "Team Name": "Team Big Dick",
+            "Elo Rating": 1099.8571746183404,
             "Matches": [
                 {
                     "Opponent": "CapNSpawn",
@@ -477,6 +867,46 @@
                 },
                 {
                     "Opponent": "Rice Enjoyers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Lego Commanders",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Lego Commanders",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Perkele",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Best or Bust",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Best or Bust",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Ursas",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Ursas",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Parthia's Finest",
                     "Result": "Loss",
                     "Date": "2024-10-28"
                 }
@@ -642,6 +1072,3296 @@
                 {
                     "Opponent": "Perkele",
                     "Result": "Win",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "E Tiers",
+            "Elo Rating": 999.7836505540264,
+            "Matches": [
+                {
+                    "Opponent": "Dump De Genz",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dump De Genz",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Rawdoggers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Rawdoggers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Teutobergs Lost",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Teutobergs Lost",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Cimmeria's Chosen",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Cimmeria's Chosen",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Warrior Snails",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Dump De Genz",
+            "Elo Rating": 1082.5448915070942,
+            "Matches": [
+                {
+                    "Opponent": "E Tiers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "E Tiers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Rawdoggers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Rawdoggers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Teutobergs Lost",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Teutobergs Lost",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Cimmeria's Chosen",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Cimmeria's Chosen",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Perkele",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Backseat Drivers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Backseat Drivers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "I for Imperium",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "I for Imperium",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Best or Bust",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Best or Bust",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Cimmerian Gorillas",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Cimmerian Gorillas",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Imperial Legion",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Imperial Legion",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Down Under",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Down Under",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Resistance",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Resistance",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Duck Hunters",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Duck Hunters",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Legitimately Average 2.0",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Legitimately Average 2.0",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Cimmerian Gorillas",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Cimmerian Gorillas",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Cimmerian Gorillas",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Cimmeria's Chosen",
+            "Elo Rating": 1096.2347401358045,
+            "Matches": [
+                {
+                    "Opponent": "The Teutobergs Lost",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Teutobergs Lost",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "E Tiers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "E Tiers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dump De Genz",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dump De Genz",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Drunk Peltasts",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Best or Bust",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gorilla Tactics",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "British Boys",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "British Boys",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Myrmidons",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Myrmidons",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Resistance",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Resistance",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Graikos",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gorilla Tactics",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Random X",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Random X",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "The Teutobergs Lost",
+            "Elo Rating": 869.8230082524184,
+            "Matches": [
+                {
+                    "Opponent": "Cimmeria's Chosen",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Cimmeria's Chosen",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "E Tiers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "E Tiers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dump De Genz",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dump De Genz",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Rawdoggers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Rawdoggers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Germans",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Germans",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Ursas",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Ursas",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Questionable Tactics",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Questionable Tactics",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Sweaty Keyboard Warriors",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Sweaty Keyboard Warriors",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Veni Vidi Vici",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Veni Vidi Vici",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Legitimately Average 2.0",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Legitimately Average 2.0",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Cimmerian Gorillas",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Cimmerian Gorillas",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Rawdoggers",
+            "Elo Rating": 970.3216609328541,
+            "Matches": [
+                {
+                    "Opponent": "E Tiers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "E Tiers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dump De Genz",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dump De Genz",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Teutobergs Lost",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Teutobergs Lost",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Warrior Snails",
+            "Elo Rating": 1114.6422738165334,
+            "Matches": [
+                {
+                    "Opponent": "Off-Meta Inc.",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Off-Meta Inc.",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Raven Revolution",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Raven Revolution",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Big Blaz",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Composuerant Igni",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Composuerant Igni",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "E Tiers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Best or Bust",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Saucey Llamas",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Saucey Llamas",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Winged Whumsars",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Winged Whumsars",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Savage and Average",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Savage and Average",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Perkele",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Best or Bust",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Off-Meta Inc.",
+            "Elo Rating": 1006.558147870008,
+            "Matches": [
+                {
+                    "Opponent": "Warrior Snails",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Warrior Snails",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Raven Revolution",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Raven Revolution",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Composuerant Igni",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Composuerant Igni",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Composuerant Igni",
+            "Elo Rating": 973.2449438424945,
+            "Matches": [
+                {
+                    "Opponent": "Big Blaz",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Big Blaz",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Off-Meta Inc.",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Off-Meta Inc.",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Raven Revolution",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Raven Revolution",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Warrior Snails",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Warrior Snails",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Drunk Peltasts",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Big Blaz",
+            "Elo Rating": 956.8666105123257,
+            "Matches": [
+                {
+                    "Opponent": "Composuerant Igni",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Composuerant Igni",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Warrior Snails",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Raven Revolution",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Raven Revolution",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Raven Revolution",
+            "Elo Rating": 991.2277875949082,
+            "Matches": [
+                {
+                    "Opponent": "Off-Meta Inc.",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Off-Meta Inc.",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Warrior Snails",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Warrior Snails",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Composuerant Igni",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Composuerant Igni",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Big Blaz",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Big Blaz",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Winged Whumsars",
+            "Elo Rating": 978.9495557211998,
+            "Matches": [
+                {
+                    "Opponent": "Gorilla Tactics",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gorilla Tactics",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Ursas",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Ursas",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Crimson Chickens",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Crimson Chickens",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Wolf Gang",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Wolf Gang",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Savage and Average",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Savage and Average",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Warrior Snails",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Warrior Snails",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Saucey Llamas",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Saucey Llamas",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Will2Kill",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Will2Kill",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Savage and Average",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Savage and Average",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Auld Alliance",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Auld Alliance",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Legitimately Average 2.0",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Legitimately Average 2.0",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Crimson Chickens",
+            "Elo Rating": 935.4772499091378,
+            "Matches": [
+                {
+                    "Opponent": "Wolf Gang",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Wolf Gang",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gorilla Tactics",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gorilla Tactics",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Winged Whumsars",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Winged Whumsars",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Ursas",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Ursas",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Ursas",
+            "Elo Rating": 991.648964380308,
+            "Matches": [
+                {
+                    "Opponent": "Gorilla Tactics",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gorilla Tactics",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Winged Whumsars",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Winged Whumsars",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Wolf Gang",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Wolf Gang",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Crimson Chickens",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Crimson Chickens",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Team Big Dick",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Team Big Dick",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Questionable Tactics",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Questionable Tactics",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Teutobergs Lost",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Teutobergs Lost",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Germans",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Germans",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Best or Bust",
+            "Elo Rating": 1247.440676089375,
+            "Matches": [
+                {
+                    "Opponent": "Perkele",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Perkele",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Lego Commanders",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Lego Commanders",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Big Dick",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Big Dick",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Team Big Dick",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Warrior Snails",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Team Big Dick",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Cimmeria's Chosen",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Parthia's Finest",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "I for Imperium",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "I for Imperium",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Backseat Drivers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Backseat Drivers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dump De Genz",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dump De Genz",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Iron Warriors",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Warrior Snails",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "I for Imperium",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "I for Imperium",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Random X",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Random X",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Random X",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Backseat Drivers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Backseat Drivers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Resistance",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Resistance",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dragons Blade",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dragons Blade",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Germans",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Germans",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Leftovers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Leftovers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Lego Commanders",
+            "Elo Rating": 898.5982928718181,
+            "Matches": [
+                {
+                    "Opponent": "Big Dick",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Big Dick",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Perkele",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Best or Bust",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Best or Bust",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Team Big Dick",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Team Big Dick",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Leftovers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Leftovers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Duck Hunters",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Duck Hunters",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Drunk Peltasts",
+            "Elo Rating": 1009.5734603623008,
+            "Matches": [
+                {
+                    "Opponent": "Parthia's Finest",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Parthia's Finest",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Resistence",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Resistence",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Legitimately Average 2.0",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Legitimately Average 2.0",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "North Korean Avengers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "North Korean Avengers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Composuerant Igni",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Cimmeria's Chosen",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Legitimately Average 2.0",
+            "Elo Rating": 1068.0050614985662,
+            "Matches": [
+                {
+                    "Opponent": "North Korean Avengers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "North Korean Avengers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Parthia's Finest",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Parthia's Finest",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Drunk Peltasts",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Drunk Peltasts",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Resistence",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Resistence",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Death Bringers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Death Bringers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Savage Cunnus",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Savage Cunnus",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Iron Warriors",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Iron Warriors",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gorilla Tactics",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gorilla Tactics",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Veni Vidi Vici",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Veni Vidi Vici",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Sweaty Keyboard Warriors",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Keyboard Warriors",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Sweaty Keyboard Warriors",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Teutobergs Lost",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Teutobergs Lost",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "I for Imperium",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "I for Imperium",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Winged Whumsars",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Winged Whumsars",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dump De Genz",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dump De Genz",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Leftovers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Leftovers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "North Korean Avengers",
+            "Elo Rating": 995.3932457794903,
+            "Matches": [
+                {
+                    "Opponent": "Legitimately Average 2.0",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Legitimately Average 2.0",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Parthia's Finest",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Parthia's Finest",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Resistence",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Drunk Peltasts",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Drunk Peltasts",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "The Resistence",
+            "Elo Rating": 958.1963715527448,
+            "Matches": [
+                {
+                    "Opponent": "Parthia's Finest",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Parthia's Finest",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Drunk Peltasts",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Drunk Peltasts",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "North Korean Avengers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Legitimately Average 2.0",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Legitimately Average 2.0",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "British Boys",
+            "Elo Rating": 979.6916657778728,
+            "Matches": [
+                {
+                    "Opponent": "Cimmeria's Chosen",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Cimmeria's Chosen",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Resistance",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Resistance",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Myrmidons",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Myrmidons",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "The Resistance",
+            "Elo Rating": 1029.247968537142,
+            "Matches": [
+                {
+                    "Opponent": "Myrmidons",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Myrmidons",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "British Boys",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "British Boys",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Cimmeria's Chosen",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Cimmeria's Chosen",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Germans",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Random X",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dragons Blade",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dragons Blade",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Best or Bust",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Best or Bust",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Backseat Drivers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Backseat Drivers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dump De Genz",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dump De Genz",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Myrmidons",
+            "Elo Rating": 918.372905539552,
+            "Matches": [
+                {
+                    "Opponent": "The Resistance",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Resistance",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Cimmeria's Chosen",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Cimmeria's Chosen",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "British Boys",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "British Boys",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Crownless Order",
+            "Elo Rating": 951.3501107371221,
+            "Matches": [
+                {
+                    "Opponent": "Gallici Corvii",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gallici Corvii",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gorilla Tactics",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gorilla Tactics",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Thureos Spears in Paris",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Thureos Spears in Paris",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Parthia's Finest",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Macedonian Maltesers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Macedonian Maltesers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Germans",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Germans",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Duck Horde Ascendency",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Gallici Corvii",
+            "Elo Rating": 952.4741868017333,
+            "Matches": [
+                {
+                    "Opponent": "Crownless Order",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Crownless Order",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gorilla Tactics",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gorilla Tactics",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Thureos Spears in Paris",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Thureos Spears in Paris",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Thureos Spears in Paris",
+            "Elo Rating": 959.4032892477696,
+            "Matches": [
+                {
+                    "Opponent": "Gorilla Tactics",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gorilla Tactics",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Crownless Order",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Crownless Order",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gallici Corvii",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Gallici Corvii",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "SlumDog Slingers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "SlumDog Slingers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Death Bringers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Death Bringers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Auld Alliance",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Auld Alliance",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Questionable Tactics",
+            "Elo Rating": 994.0615570124071,
+            "Matches": [
+                {
+                    "Opponent": "Ursas",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Ursas",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Germans",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Germans",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Teutobergs Lost",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Teutobergs Lost",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "I for Imperium",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "The Germans",
+            "Elo Rating": 1037.7881737690516,
+            "Matches": [
+                {
+                    "Opponent": "The Teutobergs Lost",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Teutobergs Lost",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Questionable Tactics",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Questionable Tactics",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Ursas",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Ursas",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Resistance",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Duck Horde Ascendency",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Duck Horde Ascendency",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Crownless Order",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Crownless Order",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Macedonian Maltesers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Best or Bust",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Best or Bust",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Random X",
+            "Elo Rating": 1093.1690837296178,
+            "Matches": [
+                {
+                    "Opponent": "Rising Kings",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Point Makers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Point Makers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Graikos",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Graikos",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Resistance",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Cimmeria's Chosen",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Cimmeria's Chosen",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Best or Bust",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Best or Bust",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Best or Bust",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Rising Kings",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Rising Kings",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "I for Imperium",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "I for Imperium",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Saucey Llamas",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Saucey Llamas",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Rising Kings",
+            "Elo Rating": 954.7088635121826,
+            "Matches": [
+                {
+                    "Opponent": "Random X",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Graikos",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Graikos",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Point Makers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Point Makers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Random X",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Random X",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Saucey Llamas",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Saucey Llamas",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "I for Imperium",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "I for Imperium",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Leftovers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Leftovers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Graikos",
+            "Elo Rating": 1063.4432833748685,
+            "Matches": [
+                {
+                    "Opponent": "Point Makers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Point Makers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Rising Kings",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Rising Kings",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Random X",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Random X",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Cimmeria's Chosen",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Point Makers",
+            "Elo Rating": 942.7722153481012,
+            "Matches": [
+                {
+                    "Opponent": "Graikos",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Graikos",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Random X",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Random X",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Rising Kings",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Rising Kings",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Backseat Drivers",
+            "Elo Rating": 919.2793172550494,
+            "Matches": [
+                {
+                    "Opponent": "Dump De Genz",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dump De Genz",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Best or Bust",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Best or Bust",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "I for Imperium",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "I for Imperium",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Best or Bust",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Best or Bust",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dragons Blade",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dragons Blade",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Resistance",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Resistance",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "I for Imperium",
+            "Elo Rating": 1041.2088952815918,
+            "Matches": [
+                {
+                    "Opponent": "Best or Bust",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Best or Bust",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dump De Genz",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dump De Genz",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Backseat Drivers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Backseat Drivers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Questionable Tactics",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Parthia's Finest",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Best or Bust",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Best or Bust",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Saucey Llamas",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Saucey Llamas",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Random X",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Random X",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Rising Kings",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Rising Kings",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Legitimately Average 2.0",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Legitimately Average 2.0",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Parthias' Finest",
+            "Elo Rating": 1002.9925139992438,
+            "Matches": [
+                {
+                    "Opponent": "Perkele",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Perkele",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Unbiased Mods",
+            "Elo Rating": 1016.8897315507729,
+            "Matches": [
+                {
+                    "Opponent": "Will2Kill",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Will2Kill",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Perkele",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Perkele",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Parthia's Finest",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Parthia's Finest",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Will2Kill",
+            "Elo Rating": 919.9743324242698,
+            "Matches": [
+                {
+                    "Opponent": "Unbiased Mods",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Unbiased Mods",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Parthia's Finest",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Parthia's Finest",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Perkele",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Perkele",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Winged Whumsars",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Winged Whumsars",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Savage and Average",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Death Bringers",
+            "Elo Rating": 874.1520478191857,
+            "Matches": [
+                {
+                    "Opponent": "Legitimately Average 2.0",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Legitimately Average 2.0",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Iron Warriors",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Iron Warriors",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Savage Cunnus",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Savage Cunnus",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Auld Alliance",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Auld Alliance",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Thureos Spears in Paris",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Thureos Spears in Paris",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "SlumDog Slingers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Iron Warriors",
+            "Elo Rating": 1060.0043328187696,
+            "Matches": [
+                {
+                    "Opponent": "Savage Cunnus",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Savage Cunnus",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Death Bringers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Death Bringers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Legitimately Average 2.0",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Legitimately Average 2.0",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Best or Bust",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Savage Cunnus",
+            "Elo Rating": 941.3390335908553,
+            "Matches": [
+                {
+                    "Opponent": "Iron Warriors",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Iron Warriors",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Legitimately Average 2.0",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Legitimately Average 2.0",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Death Bringers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Death Bringers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Saucey Llamas",
+            "Elo Rating": 916.4407192188933,
+            "Matches": [
+                {
+                    "Opponent": "Warrior Snails",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Warrior Snails",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Savage and Average",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Savage and Average",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Winged Whumsars",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Winged Whumsars",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "I for Imperium",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "I for Imperium",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Rising Kings",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Rising Kings",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Random X",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Random X",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Savage and Average",
+            "Elo Rating": 1069.5596281774729,
+            "Matches": [
+                {
+                    "Opponent": "Winged Whumsars",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Winged Whumsars",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Saucey Llamas",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Saucey Llamas",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Warrior Snails",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Warrior Snails",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Stoic Floyds",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Stoic Floyds",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Winged Whumsars",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Winged Whumsars",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Will2Kill",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Duck Horde Ascendency",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Duck Horde Ascendency",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Cimmerian Gorillas",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Cimmerian Gorillas",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Veni Vidi Vici",
+            "Elo Rating": 881.3524669403503,
+            "Matches": [
+                {
+                    "Opponent": "Legitimately Average 2.0 2.0",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Legitimately Average 2.0 2.0",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Teutobergs Lost",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Teutobergs Lost",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Legitimately Average 2.0",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Legitimately Average 2.0",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Sweaty Keyboard Warriors",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Sweaty Keyboard Warriors",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Sweaty Keyboard Warriors",
+            "Elo Rating": 1014.9312331523084,
+            "Matches": [
+                {
+                    "Opponent": "The Teutobergs Lost",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Teutobergs Lost",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Legitimately Average 2.0",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Legitimately Average 2.0",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Veni Vidi Vici",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Veni Vidi Vici",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Keyboard Warriors",
+            "Elo Rating": 1018.1267538965118,
+            "Matches": [
+                {
+                    "Opponent": "Legitimately Average 2.0",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Dragons Blade",
+            "Elo Rating": 958.3301626582798,
+            "Matches": [
+                {
+                    "Opponent": "The Resistance",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Resistance",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Backseat Drivers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Backseat Drivers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Best or Bust",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Best or Bust",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "The Imperial Legion",
+            "Elo Rating": 967.6781367699613,
+            "Matches": [
+                {
+                    "Opponent": "Down Under",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Down Under",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dump De Genz",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dump De Genz",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Cimmerian Gorillas",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Cimmerian Gorillas",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Down Under",
+            "Elo Rating": 917.2308585921979,
+            "Matches": [
+                {
+                    "Opponent": "The Imperial Legion",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Imperial Legion",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Cimmerian Gorillas",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Cimmerian Gorillas",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dump De Genz",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dump De Genz",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Cimmerian Gorillas",
+            "Elo Rating": 1218.4265870922245,
+            "Matches": [
+                {
+                    "Opponent": "Dump De Genz",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dump De Genz",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Down Under",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Down Under",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Imperial Legion",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Imperial Legion",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Teutobergs Lost",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Teutobergs Lost",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Savage and Average",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Savage and Average",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Leftovers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Leftovers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dump De Genz",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dump De Genz",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Dump De Genz",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "The Auld Alliance",
+            "Elo Rating": 1019.3413034939863,
+            "Matches": [
+                {
+                    "Opponent": "Death Bringers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Death Bringers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "SlumDog Slingers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "SlumDog Slingers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Thureos Spears in Paris",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Thureos Spears in Paris",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Winged Whumsars",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Winged Whumsars",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "SlumDog Slingers",
+            "Elo Rating": 941.7454351599567,
+            "Matches": [
+                {
+                    "Opponent": "Thureos Spears in Paris",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Thureos Spears in Paris",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Auld Alliance",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Auld Alliance",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Death Bringers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Duck Hunters",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Duck Hunters",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Aids Brigade",
+            "Elo Rating": 940.3391689069462,
+            "Matches": [
+                {
+                    "Opponent": "Duck Hunters",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Duck Hunters",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Leftovers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Leftovers",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "The Leftovers",
+            "Elo Rating": 1002.9329403162192,
+            "Matches": [
+                {
+                    "Opponent": "Lego Commanders",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Lego Commanders",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Aids Brigade",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Aids Brigade",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Duck Hunters",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Duck Hunters",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Rising Kings",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Rising Kings",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Best or Bust",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Best or Bust",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Cimmerian Gorillas",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Cimmerian Gorillas",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Legitimately Average 2.0",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Legitimately Average 2.0",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Stoic Floyds",
+            "Elo Rating": 971.7759575921093,
+            "Matches": [
+                {
+                    "Opponent": "Savage and Average",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Savage and Average",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Duck Horde Ascendency",
+            "Elo Rating": 1005.3976130905357,
+            "Matches": [
+                {
+                    "Opponent": "The Germans",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Germans",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Macedonian Maltesers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Macedonian Maltesers",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Crownless Order",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Savage and Average",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Savage and Average",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                }
+            ]
+        },
+        {
+            "Team Name": "Macedonian Maltesers",
+            "Elo Rating": 985.8037951231248,
+            "Matches": [
+                {
+                    "Opponent": "Crownless Order",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Crownless Order",
+                    "Result": "Win",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Duck Horde Ascendency",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Duck Horde Ascendency",
+                    "Result": "Loss",
+                    "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "The Germans",
+                    "Result": "Loss",
                     "Date": "2024-10-28"
                 }
             ]

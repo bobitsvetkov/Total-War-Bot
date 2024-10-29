@@ -64,7 +64,7 @@ SPECIAL_UNITS = {
         "ranged_strength": 5.0
     },
     "Thracian Nobles": {
-        "melee_strength": 10.0,
+        "melee_strength": 5.0,
     },
     "Auxiliary Balearic Slingers": {
         "ranged_strength": 5.0,

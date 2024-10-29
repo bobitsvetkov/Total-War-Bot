@@ -54,7 +54,7 @@ async def setup_bot():
     await bot.add_cog(UnitStatsCog(bot))
     await bot.add_cog(TierListCog(bot))
     await bot.add_cog(CommandsListCog(bot))
-    await bot.add_cog(PlayerProfile(bot))
+    # await bot.add_cog(PlayerProfile(bot))
     await bot.add_cog(HistoricalResults(bot))
     await bot.add_cog(TeamLeaderboardSystem(bot))
 

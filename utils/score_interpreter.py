@@ -1,11 +1,13 @@
-def interpret_score(stat_value: int, stat_type: str) -> str:
-    """Interpret a stat value for descriptive feedback."""
+def interpret_score(stat_value: float, stat_type: str) -> str:
+    """Interpret a stat value for descriptive feedback based on a 0-100 scoring system."""
     thresholds = {
-        "Tankiness": [(3100, "weak"), (3300, "average"), (float("inf"), "strong")],
-        "Melee": [(2000, "weak"), (2600, "average"), (float("inf"), "strong")],
-        "Ranged": [(2000, "poor"), (3500, "decent"), (float("inf"), "impressive")]
+        "Survivability": [(0, "very fragile"), (30.00, "fragile"), (50, "adequate"), (70, "resilient"), (90, "formidable"), (100, "unbreakable")],
+        "Melee": [(0, "very underpowered"), (30.00, "underpowered"), (50, "balanced"), (70, "potent"), (90, "dominant"), (100, "unstoppable")],
+        "Ranged": [(0, "very limited"), (30.00, "limited"), (50, "effective"), (70, "deadly"), (90, "lethal"), (100, "masterful")]
     }
+    
     for threshold, descriptor in thresholds.get(stat_type, []):
         if stat_value <= threshold:
             return f"The {stat_type.lower()} is {descriptor}."
-    return f"Unknown stat type: {stat_type}"
+    
+    return f"The {stat_type.lower()} is outstanding."

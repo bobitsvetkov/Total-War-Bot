@@ -5,11 +5,11 @@ import asyncio
 
 model = OllamaLLM(model="llama3", temperature=0.7, num_ctx=2048)
 
-async def generate_analysis(faction_name: str, stats: Dict[str, int]) -> str:
+async def generate_analysis(faction_name: str, stats: Dict[str, float]) -> str:
     """Generate a faction analysis based on given stats."""
     prompt = (
         f"Analyze the {faction_name} faction with these stats:\n"
-        f"Tankiness: {interpret_score(stats['tankiness'], 'Tankiness')}\n"
+        f"survivability: {interpret_score(stats['survivability'], 'Survivability')}\n"
         f"Melee: {interpret_score(stats['melee_strength'], 'Melee')}\n"
         f"Ranged: {interpret_score(stats['ranged_strength'], 'Ranged')}\n"
         "In multiplayer battles, focus on advice on how to best to use the faction and it's strengths and weaknesses. Be short and concise. "

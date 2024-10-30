@@ -2,147 +2,115 @@ import discord
 from discord.ext import commands
 import logging
 import matplotlib.pyplot as plt
+import matplotlib.axes
 import numpy as np
-import json
-import os
 from io import BytesIO
-# Define intents
-intents = discord.Intents.default()
-intents.messages = True
-intents.message_content = True
-bot = commands.Bot(command_prefix = "!", intents=intents)
+from utils.data_loader import load_unit_data
 
-json_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'units_stats.json')
+class UnitStatsComparisonCog(commands.Cog):
+    def __init__(self, bot):
+        self.bot = bot
+        self.unit_data = load_unit_data()
+    def query_unit_stats(self, unit_name):
+        """Extract specific stat information for a unit."""
+        logging.info(f"Looking for unit: {unit_name}")
+        return next((unit for unit in self.unit_data if unit['Unit'].lower() == unit_name.lower()), None)
 
-# Load unit data from JSON
-with open(json_path) as f:
-    unit_data = json.load(f)
-def query_unit_stats(unit_name):
-    """Extract specific stat information for a unit."""
-    logging.info(f"Looking for unit: {unit_name}")
-    for unit in unit_data:
-        if unit['Unit'].lower() == unit_name.lower():
-            return unit
-    return None
+    def compare_stats(self, unit1, unit2):
+        """Generate a comparison image for unit damage stats."""
+        plt.style.use('ggplot')
+        fig, ax = plt.subplots(figsize=(20, 8), dpi=100)
 
-def compare_stats(unit1, unit2):
-    """Generate a modern-styled comparison image for damage stats."""
-    plt.style.use('ggplot')
-    fig, ax = plt.subplots(figsize=(20, 8), dpi=100)
+        stats = [
+            'Base Damage', 'AP Damage', 'Weapon Damage',
+            'Bonus vs Large', 'Bonus vs Infantry',
+            'Charge Bonus', 'Melee Defense', 'Melee Attack',
+            'Armor', 'HP', 'Morale', 'Range',
+            'Base Missile Damage', 'AP Missile Damage',
+            'Total Missile Damage', 'Missile Block Chance', 'Ammo'
+        ]
 
-    # Define stats and get values
-    stats = ['Base Damage', 'AP Damage', 'Weapon Damage',
-             'Bonus vs Large', 'Bonus vs Infantry',
-             'Charge Bonus', 'Melee Defense', 'Melee Attack',
-             'Armor', 'HP', 'Morale','Range', 'Base Missile Damage',
-             'AP Missile Damage', 'Total Missile Damage',
-             'Missile Block Chance', 'Ammo']
+        unit1_stats = [unit1.get(stat, 0) for stat in stats]
+        unit2_stats = [unit2.get(stat, 0) for stat in stats]
 
-    unit1_stats = [unit1.get(stat, 0) for stat in stats]
-    unit2_stats = [unit2.get(stat, 0) for stat in stats]
+        color1, color2 = '#2ecc71', '#3498db'
+        bar_width = 0.35
+        index = np.arange(len(stats))
 
-    color1 = '#2ecc71'  # Green
-    color2 = '#3498db'  # Blue
+        bars1 = ax.bar(index, unit1_stats, bar_width, color=color1, alpha=0.8)
+        bars2 = ax.bar(index + bar_width, unit2_stats, bar_width, color=color2, alpha=0.8)
 
-    bar_width = 0.35
-    index = np.arange(len(stats))
+        self.add_value_labels(bars1, ax)
+        self.add_value_labels(bars2, ax)
 
-    bars1 = ax.bar(index, unit1_stats, bar_width,
-                   color=color1, alpha=0.8)
+        self.setup_axes(ax, unit1, unit2, stats, index, bar_width)
 
-    bars2 = ax.bar(index + bar_width, unit2_stats, bar_width,
-                   color=color2, alpha=0.8)
+        buf = BytesIO()
+        plt.savefig(buf, format='png', facecolor='white', edgecolor='none',
+                    bbox_inches='tight', pad_inches=0.3)
+        buf.seek(0)
+        plt.close()
+        return buf
 
-    def add_value_labels(bars):
+    def add_value_labels(self, bars, ax):
+        """Add value labels on top of the bars."""
         for bar in bars:
             height = bar.get_height()
-            ax.text(bar.get_x() + bar.get_width()/2., height,
-                   f'{int(height)}',
-                   ha='center', va='bottom',
-                   fontsize=10, fontweight='bold',
-                   color='#444444')
+            ax.text(bar.get_x() + bar.get_width() / 2, height, f'{int(height)}',
+                    ha='center', va='bottom', fontsize=10, fontweight='bold', color='#444444')
 
-    add_value_labels(bars1)
-    add_value_labels(bars2)
+    def setup_axes(self, ax: matplotlib.axes.Axes, unit1, unit2, stats, index, bar_width):
+        """Setup the axes for the comparison plot."""
+        ax.set_xlabel('Unit Statistics', fontsize=12, fontweight='bold', labelpad=15)
+        ax.set_ylabel('Values', fontsize=12, fontweight='bold', labelpad=15)
+        ax.set_title(f"{unit1['Unit']} vs {unit2['Unit']}\n"
+                     f"[{unit1['Faction']} vs {unit2['Faction']}]", fontsize=14, fontweight='bold', pad=20)
+        ax.set_xticks(index + bar_width / 2)
+        ax.set_xticklabels(stats, fontsize=10, rotation=45, ha='right')
+        ax.spines['top'].set_visible(False)
+        ax.spines['right'].set_visible(False)
+        ax.set_facecolor('white')
 
-    ax.set_xlabel('Unit Statistics', fontsize=12, fontweight='bold', labelpad=15)
-    ax.set_ylabel('Values', fontsize=12, fontweight='bold', labelpad=15)
+        custom_legend_labels = [f"{unit1['Unit']} (Green)", f"{unit2['Unit']} (Blue)"]
+        ax.legend(custom_legend_labels, loc='upper right', fontsize=12, frameon=False)
 
-    title = f"{unit1['Unit']} vs {unit2['Unit']}\nUnit Statistics Comparison"
-    subtitle = f"[{unit1['Faction']} vs {unit2['Faction']}]"
-    ax.set_title(title + '\n' + subtitle + '\n',
-                 fontsize=14, fontweight='bold', pad=20)
+    @commands.command(name='compare_stats')
+    async def compare_stats_command(self, ctx: commands.Context, *, units: str):
+        """Compare damage stats of two units."""
+        unit1_name, unit2_name = self.parse_unit_names(units)
+        if not unit1_name or not unit2_name:
+            await ctx.send("Please provide two units to compare using one of these formats:\n"
+                           "- `!compare_stats Unit1 vs Unit2`\n"
+                           "- `!compare_stats Unit1 and Unit2`\n"
+                           "- `!compare_stats Unit1, Unit2`\n"
+                           "Example: `!compare_stats Evocati Cohort vs Sword Followers`")
+            return
 
-    ax.set_xticks(index + bar_width / 2)
-    ax.set_xticklabels(stats, fontsize=10, rotation=45, ha='right')
+        unit1 = self.query_unit_stats(unit1_name)
+        unit2 = self.query_unit_stats(unit2_name)
 
-    ax.spines['top'].set_visible(False)
-    ax.spines['right'].set_visible(False)
+        if not unit1:
+            await ctx.send(f"Unit not found: {unit1_name}")
+            return
+        if not unit2:
+            await ctx.send(f"Unit not found: {unit2_name}")
+            return
 
-    ax.set_facecolor('white')
-    fig.patch.set_facecolor('white')
+        comparison_image = self.compare_stats(unit1, unit2)
+        file = discord.File(fp=comparison_image, filename='stats_comparison.png')
+        await ctx.send(file=file)
 
-    custom_legend_labels = [f"{unit1['Unit']} (Green)", f"{unit2['Unit']} (Blue)"]
-    ax.legend(custom_legend_labels, loc='upper right', fontsize=12, frameon=False)
-
-    # Adjust layout to prevent label cutoff
-    plt.tight_layout()
-
-    buf = BytesIO()
-    plt.savefig(buf,
-                format='png',
-                facecolor='white',
-                edgecolor='none',
-                bbox_inches='tight',
-                pad_inches=0.3)
-    buf.seek(0)
-
-    plt.close()
-    return buf
-
-@bot.command(name='compare_stats')
-async def compare_stats_command(ctx: commands.Context, *, units: str):
-    """Compare damage stats of two units."""
-    # Split the input on 'vs' or 'versus' if present
-    if ' vs ' in units.lower():
-        unit1_name, unit2_name = units.split(' vs ', 1)
-    elif ' versus ' in units.lower():
-        unit1_name, unit2_name = units.split(' versus ', 1)
-    else:
-        # If no 'vs' or 'versus', try to find the last occurrence of 'and'
-        if ' and ' in units.lower():
-            unit1_name, unit2_name = units.split(' and ', 1)
+    def parse_unit_names(self, units: str):
+        """Parse unit names from the input."""
+        units_lower = units.lower()
+        if ' vs ' in units_lower:
+            return units.split(' vs ', 1)
+        elif ' versus ' in units_lower:
+            return units.split(' versus ', 1)
+        elif ' and ' in units_lower:
+            return units.split(' and ', 1)
         else:
-            # If no clear separator, look for the comma
             parts = [p.strip() for p in units.split(',')]
             if len(parts) == 2:
-                unit1_name, unit2_name = parts
-            else:
-                await ctx.send("Please provide two units to compare using one of these formats:\n"
-                             "- `!compare_stats Unit1 vs Unit2`\n"
-                             "- `!compare_stats Unit1 and Unit2`\n"
-                             "- `!compare_stats Unit1, Unit2`\n"
-                             "Example: `!compare_stats Evocati Cohort vs Sword Followers`")
-                return
-
-    # Clean up the unit names
-    unit1_name = unit1_name.strip()
-    unit2_name = unit2_name.strip()
-
-    # Query the stats using the clean names
-    unit1 = query_unit_stats(unit1_name)
-    unit2 = query_unit_stats(unit2_name)
-
-    if not unit1:
-        await ctx.send(f"Unit not found: {unit1_name}")
-        return
-    if not unit2:
-        await ctx.send(f"Unit not found: {unit2_name}")
-        return
-
-    # Generate the comparison image for damage stats
-    comparison_image = compare_stats(unit1, unit2)
-
-    # Send the generated image
-    file = discord.File(fp=comparison_image, filename='stats_comparison.png')
-    await ctx.send(file=file)
+                return parts
+        return None, None

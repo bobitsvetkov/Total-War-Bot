@@ -18,7 +18,16 @@ import threading
 
 app = FastAPI()
 
+# Set up logging
+class IgnoreFaviconFilter(logging.Filter):
+    def filter(self, record):
+        # Ignore 404 for favicon.ico
+        return "favicon.ico" not in record.getMessage()
+
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger()
+logger.addFilter(IgnoreFaviconFilter())  # Apply the filter
+
 json_path = os.path.join(os.path.dirname(__file__), 'data', 'units_stats.json')
 
 with open(json_path) as f:
@@ -72,6 +81,8 @@ def run_bot():
 if __name__ == '__main__':
     port = int(os.getenv("PORT", default=8080))
 
-    threading.Thread(target=uvicorn.run, args=(app,), kwargs={"host": "0.0.0.0", "port": port}).start()
+    # Start the Discord bot in a separate thread
+    threading.Thread(target=run_bot).start()
 
-    run_bot()
+    # Run FastAPI app
+    uvicorn.run(app, host="0.0.0.0", port=port)

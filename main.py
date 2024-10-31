@@ -56,7 +56,5 @@ async def on_ready():
     logging.info(f'Bot is ready. Logged in as {bot.user}')
     bot.add_check(is_in_correct_channel)
     await setup_bot()
-logging.info(f"Listening on port: {os.getenv('PORT')}")
 if __name__ == '__main__':
-    port = int(os.getenv("PORT", default=5000))
     bot.run(bot_token)

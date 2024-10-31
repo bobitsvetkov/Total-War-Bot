@@ -1,5 +1,4 @@
 from typing import Dict, List
-from langchain_ollama import OllamaLLM
 from discord.ext import commands
 from utils.unit_performance import make_hashable_unit, analyze_faction_weights
 from utils.data_loader import load_unit_data
@@ -7,11 +6,6 @@ from utils.data_loader import load_unit_data
 class FactionComparisonBot(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        self.model = OllamaLLM(
-            model="llama3",
-            temperature=0.7,
-            num_ctx=2048,
-        )
         self.unit_data = load_unit_data()
 
         self.factions: Dict[str, List[dict]] = {}
@@ -30,7 +24,7 @@ class FactionComparisonBot(commands.Cog):
 
         stats_faction1 = analyze_faction_weights(tuple(make_hashable_unit(unit)
                         for unit in self.factions[faction1]),faction_name=faction1)
-        stats_faction2 = analyze_faction_weights(tuple(make_hashable_unit(unit) 
+        stats_faction2 = analyze_faction_weights(tuple(make_hashable_unit(unit)
                         for unit in self.factions[faction2]), faction_name=faction2)
 
         comparison = (
@@ -45,7 +39,7 @@ class FactionComparisonBot(commands.Cog):
             f"Ranged: {stats_faction2['ranged_strength']}\n\n"
         )
 
-        focus = "Focus on maximizing your strengths and mitigating weaknesses based on these stats."
+        focus = "The values represent percentage points. 0 - The Worst 50 - average 100 - The Best."
         return comparison + focus
 
     @commands.command(name='faction_compare')

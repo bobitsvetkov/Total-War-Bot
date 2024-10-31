@@ -4,7 +4,7 @@ from typing import Dict, List, Any
 import textwrap
 from concurrent.futures import ThreadPoolExecutor
 from utils.data_loader import load_unit_data
-from utils.ollama_prompt import generate_analysis
+from utils.gemini_prompt import generate_analysis
 from utils.unit_performance import make_hashable_unit, analyze_faction_weights
 
 UnitData = Dict[str, Any]
@@ -41,7 +41,7 @@ class FactionAnalysisBot(commands.Cog):
 
         units_tuple = tuple(make_hashable_unit(unit) for unit in self.factions[faction_name])
         stats = analyze_faction_weights(units_tuple, faction_name)
-        analysis = await generate_analysis(faction_name, stats)
+        analysis = generate_analysis(faction_name, stats)
         self.analysis_cache[faction_name] = analysis
         return analysis
 

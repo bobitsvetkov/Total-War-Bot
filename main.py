@@ -58,5 +58,5 @@ async def on_ready():
     await setup_bot()
 print(f"Listening on port: {os.getenv('PORT')}")
 if __name__ == '__main__':
-    port = int(os.getenv("PORT", 5000))
+    port = int(os.getenv("PORT", default=5000))
     bot.run(bot_token)

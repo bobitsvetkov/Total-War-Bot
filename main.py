@@ -12,6 +12,11 @@ from cogs.tier_list.tier_list import TierListCog
 from cogs.commands.commands_list import CommandsListCog
 from cogs.historical_results.historical_results import HistoricalResults
 from cogs.elo_rating.display_elo import TeamDisplaySystem
+from fastapi import FastAPI
+import uvicorn
+import threading
+
+app = FastAPI()
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 json_path = os.path.join(os.path.dirname(__file__), 'data', 'units_stats.json')
@@ -51,12 +56,22 @@ async def setup_bot():
     await bot.add_cog(TeamDisplaySystem(bot))
     await bot.add_cog(UnitStatsComparisonCog(bot))
 
+@app.get("/")
+async def read_root():
+    return {"message": "Bot is running"}
+
 @bot.event
 async def on_ready():
     logging.info(f'Bot is ready. Logged in as {bot.user}')
     bot.add_check(is_in_correct_channel)
     await setup_bot()
-logging.info(f"Listening on port: {os.getenv('PORT')}")
-if __name__ == '__main__':
-    port = int(os.getenv("PORT", default=5000))
+
+def run_bot():
     bot.run(bot_token)
+
+if __name__ == '__main__':
+    port = int(os.getenv("PORT", default=8080))
+
+    threading.Thread(target=uvicorn.run, args=(app,), kwargs={"host": "0.0.0.0", "port": port}).start()
+
+    run_bot()

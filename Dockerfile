@@ -4,10 +4,12 @@ WORKDIR /app
 
 COPY requirements.txt .
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install virtualenv
+
+RUN virtualenv venv
+
+RUN ./venv/bin/pip install -r requirements.txt
 
 COPY . .
 
-EXPOSE $PORT
-
-CMD ["python", "main.py"]
+CMD ["./venv/bin/python", "main.py"]

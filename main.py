@@ -12,22 +12,8 @@ from cogs.tier_list.tier_list import TierListCog
 from cogs.commands.commands_list import CommandsListCog
 from cogs.historical_results.historical_results import HistoricalResults
 from cogs.elo_rating.display_elo import TeamDisplaySystem
-from fastapi import FastAPI
-import uvicorn
-import threading
-
-app = FastAPI()
-
-# Set up logging
-class IgnoreFaviconFilter(logging.Filter):
-    def filter(self, record):
-        # Ignore 404 for favicon.ico
-        return "favicon.ico" not in record.getMessage()
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-logger = logging.getLogger()
-logger.addFilter(IgnoreFaviconFilter())  # Apply the filter
-
 json_path = os.path.join(os.path.dirname(__file__), 'data', 'units_stats.json')
 
 with open(json_path) as f:
@@ -38,7 +24,7 @@ bot_token = os.getenv("BOT_TOKEN")
 if not bot_token:
     raise ValueError("Discord bot token is not set. Please set it in your environment variables.")
 
-channel_id = int(os.getenv("CHANNEL", "0"))  # Ensure conversion to integer
+channel_id = int(os.getenv("CHANNEL", "0"))
 
 intents = discord.Intents.default()
 intents.messages = True
@@ -65,24 +51,12 @@ async def setup_bot():
     await bot.add_cog(TeamDisplaySystem(bot))
     await bot.add_cog(UnitStatsComparisonCog(bot))
 
-@app.get("/")
-async def read_root():
-    return {"message": "Bot is running"}
-
 @bot.event
 async def on_ready():
     logging.info(f'Bot is ready. Logged in as {bot.user}')
     bot.add_check(is_in_correct_channel)
     await setup_bot()
-
-def run_bot():
-    bot.run(bot_token)
-
+logging.info(f"Listening on port: {os.getenv('PORT')}")
 if __name__ == '__main__':
-    port = int(os.getenv("PORT", default=8080))
-
-    # Start the Discord bot in a separate thread
-    threading.Thread(target=run_bot).start()
-
-    # Run FastAPI app
-    uvicorn.run(app, host="0.0.0.0", port=port)
+    port = int(os.getenv("PORT", default=5000))
+    bot.run(bot_token)

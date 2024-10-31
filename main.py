@@ -57,4 +57,6 @@ async def on_ready():
     bot.add_check(is_in_correct_channel)
     await setup_bot()
 
-bot.run(bot_token)
+if __name__ == '__main__':
+    port = int(os.getenv("PORT", 5000))
+    bot.run(bot_token)

@@ -28,19 +28,31 @@ class FactionComparisonBot(commands.Cog):
                         for unit in self.factions[faction2]), faction_name=faction2)
 
         comparison = (
-            f"**Comparison between {faction1} and {faction2}:**\n\n"
-            f"**{faction1}**\n"
-            f"Survivability: {stats_faction1['survivability']}\n"
-            f"Melee: {stats_faction1['melee_strength']}\n"
-            f"Ranged: {stats_faction1['ranged_strength']}\n\n"
-            f"**{faction2}**\n"
-            f"Survivability: {stats_faction2['survivability']}\n"
-            f"Melee: {stats_faction2['melee_strength']}\n"
-            f"Ranged: {stats_faction2['ranged_strength']}\n\n"
-        )
+        f"**Comparison between {faction1} and {faction2}:**\n\n"
+        f"**{faction1}**\n"
+        f"- **Survivability**: {stats_faction1['survivability']}\n"
+        f"- **Melee**: {stats_faction1['melee_strength']}\n"
+        f"- **Ranged**: {stats_faction1['ranged_strength']}\n"
+        f"- **Cavalry Prowess**: {stats_faction1['cavalry_prowess']}\n"
+        f"- **Pilla Prowess**: {stats_faction1['pilla_prowess']}\n\n"
+        f"**{faction2}**\n"
+        f"- **Survivability**: {stats_faction2['survivability']}\n"
+        f"- **Melee**: {stats_faction2['melee_strength']}\n"
+        f"- **Ranged**: {stats_faction2['ranged_strength']}\n"
+        f"- **Cavalry Prowess**: {stats_faction2['cavalry_prowess']}\n"
+        f"- **Pilla Prowess**: {stats_faction2['pilla_prowess']}\n\n"
+)
 
-        focus = "The values represent percentage points. 0 - The Worst 50 - average 100 - The Best."
-        return comparison + focus
+        description = (
+            "The values represent percentage points: 0 - The Worst, 50 - Average, 100 - The Best.\n\n"
+            "**Stat Descriptions:**\n"
+            "- **Survivability**: Durability in battle (armor, health, morale).\n"
+            "- **Melee**: Close-combat effectiveness of melee infantry.\n"
+            "- **Ranged**: How powerful the faction's skirmishers are.\n"
+            "- **Cavalry Prowess**: Impact and combat effectiveness of cavalry.\n"
+            "- **Pilla Prowess**: Efficiency in disrupting enemies with pilla.\n"
+        )
+        return comparison + description
 
     @commands.command(name='faction_compare')
     async def faction_compare_command(self, ctx: commands.Context, *, factions: str):

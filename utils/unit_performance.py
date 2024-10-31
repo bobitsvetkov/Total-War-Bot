@@ -2,16 +2,10 @@ from functools import lru_cache
 from typing import Dict, Any, Tuple
 import logging
 import json
-from utils.faction_modifiers import FACTION_MODIFIERS
+from utils.data_loader import load_factions_from_data, load_faction_modifiers
 
-def load_factions_from_data(file_path: str):
-    """Extracts unique faction names from units_stats.json."""
-    with open(file_path, 'r') as f:
-        units_data = json.load(f)
-    return list({unit["Faction"] for unit in units_data})
-
-# Example use
 factions = load_factions_from_data('data/units_stats.json')
+modifiers = load_faction_modifiers('data/faction_modifiers.json')
 
 
 
@@ -24,16 +18,36 @@ def analyze_faction_weights(faction_units: Tuple[Dict[str, Any]], faction_name: 
     """
     if not faction_units:
         logging.warning("No units provided for analysis")
-        return {"survivability": 0.00, "melee_strength": 0.00, "ranged_strength": 0.00}
+        return {"survivability": 0.00, "melee_strength": 0.00,
+                "ranged_strength": 0.00, "cavalry_prowess": 0.00,
+                "pilla_prowess": 0.00}
 
     # Initialize stats
-    faction_stats = {"survivability": 0.0, "melee_strength": 0.0, "ranged_strength": 0.0}
+    faction_stats = {
+    "survivability": 0.0,
+    "melee_strength": 0.0,
+    "ranged_strength": 0.0,
+    "cavalry_prowess": 0.0,
+    "pilla_prowess": 0.0
+}
     
     # Convert tuple of units to list of dicts
     faction_units_dicts = [dict(unit) for unit in faction_units]
     total_units = len(faction_units_dicts)
     missile_units = sum(1 for unit in faction_units_dicts if unit.get("Base Missile Damage", 0) > 0)
 
+
+    cavalry_units = [unit for unit in faction_units_dicts if unit.get("Class") in ["Shock Cavalry", "Melee Cavalry"]]
+    for unit in cavalry_units:
+        faction_stats["cavalry_prowess"] += (
+            unit.get("Charge Bonus", 0) + unit.get("Melee Attack", 0) + unit.get("Armor", 0)
+    )
+
+    pilla_units = [unit for unit in faction_units_dicts if 0 < unit.get("Range", 0) <= 80]
+    for unit in pilla_units:
+        faction_stats["pilla_prowess"] += (
+            unit.get("Missile Damage", 0) + unit.get("AP Damage", 0) + unit.get("Ammo", 0)
+        )
     # Calculate base stats
     for unit in faction_units_dicts:
         # Calculate weighted stats
@@ -45,19 +59,21 @@ def analyze_faction_weights(faction_units: Tuple[Dict[str, Any]], faction_name: 
         + unit.get("Base Damage", 0) + unit.get("Charge Bonus", 0)
         + unit.get("AP Damage", 0) + unit.get("Bonus vs Infantry")
         
-        if unit.get("Range", 0) >= 80:
+        if unit.get("Range", 0) > 80:
             faction_stats["ranged_strength"] += unit.get("Base Missile Damage", 0)
             + unit.get("Accuracy", 0) + unit.get("AP Missile Damage", 0)
             + unit.get("Range", 0) + unit.get("Ammo", 0)
 
     # Apply faction modifiers
-    faction_modifier = FACTION_MODIFIERS.get(faction_name, {"survivability": 1.0, "melee_strength": 1.0, "ranged_strength": 1.0})
+    faction_modifier = modifiers.get(faction_name, {"survivability": 1.0, "melee_strength": 1.0, "ranged_strength": 1.0, "cavalry_prowess": 1.0, "pilla_prowess": 1.0})
 
     try:
-        final_stats = {
+         final_stats = {
             "survivability": round((faction_stats["survivability"] / total_units) * faction_modifier["survivability"], 2),
             "melee_strength": round((faction_stats["melee_strength"] / total_units) * faction_modifier["melee_strength"], 2),
-            "ranged_strength": round((faction_stats["ranged_strength"] / missile_units) * faction_modifier["ranged_strength"], 2) if missile_units > 0 else 0.00
+            "ranged_strength": round((faction_stats["ranged_strength"] / missile_units) * faction_modifier["ranged_strength"], 2) if missile_units > 0 else 0.00,
+            "cavalry_prowess": round((faction_stats["cavalry_prowess"] / len(cavalry_units)) * faction_modifier["cavalry_prowess"], 2) if cavalry_units else 0.00,
+            "pilla_prowess": round((faction_stats["pilla_prowess"] / len(pilla_units)) * faction_modifier["pilla_prowess"], 2) if pilla_units else 0.00
         }
     except ZeroDivisionError as e:
         logging.error(f"Division by zero error when calculating stats: {e}")

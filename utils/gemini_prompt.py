@@ -17,14 +17,15 @@ def generate_analysis(faction_name: str, stats: Dict[str, float]) -> str:
     ranged_strength_desc = interpret_score(stats['ranged_strength'], "Ranged")
 
     prompt = (
-        f"Analyze the strength of the {faction_name} faction in Rome 2 Total War Multiplayer Competitive Battles "
-        f"using the following stats:\n"
-        f"- Survivability: {stats['survivability']} ({survivability_desc})\n"
-        f"- Melee Strength: {stats['melee_strength']} ({melee_strength_desc})\n"
-        f"- Ranged Strength: {stats['ranged_strength']} ({ranged_strength_desc})\n"
-        "These stats are on a scale of 0 to 100, where 100 is the strongest. "
-        "Do not assume any values below or beyond these. Provide concise advice on utilizing this faction’s strengths and weaknesses effectively."
-    )
+    f"Provide a detailed analysis of the {faction_name} faction in Rome 2 Total War Multiplayer Competitive Battles. "
+    f"Consider the following key stats, each on a scale from 0 (weakest) to 100 (strongest):\n"
+    f"- **Survivability** ({stats['survivability']}): {survivability_desc} - Indicates the faction's durability (armor, health, morale).\n"
+    f"- **Melee Strength** ({stats['melee_strength']}): {melee_strength_desc} - Reflects hand-to-hand combat capability.\n"
+    f"- **Ranged Strength** ({stats['ranged_strength']}): {ranged_strength_desc} - Measures effectiveness with ranged units.\n"
+    f"- **Cavalry Prowess** ({stats['cavalry_prowess']}): Assesses cavalry effectiveness in impact damage and overall combat effectiveness.\n"
+    f"- **Pilla Prowess** ({stats['pilla_prowess']}): Indicates efficiency of pilla-throwing units to disrupt enemy lines.\n\n"
+    "Based on these scores, explain the best strategies for leveraging this faction’s strengths and mitigating its weaknesses. Keep the analysis concise and provide actionable gameplay advice."
+)
     
     try:
         model = genai.GenerativeModel("gemini-1.5-flash")

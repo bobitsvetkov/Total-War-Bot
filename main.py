@@ -12,6 +12,7 @@ from cogs.tier_list.tier_list import TierListCog
 from cogs.commands.commands_list import CommandsListCog
 from cogs.historical_results.historical_results import HistoricalResults
 from cogs.elo_rating.display_elo import TeamDisplaySystem
+from cogs.land_guide.land_guide_command import LandGuidePlaylist
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 json_path = os.path.join(os.path.dirname(__file__), 'data', 'units_stats.json')
@@ -24,6 +25,10 @@ bot_token = os.getenv("BOT_TOKEN")
 if not bot_token:
     raise ValueError("Discord bot token is not set. Please set it in your environment variables.")
 
+dev_channel_id = int(os.getenv("DEV_CHANNEL_ID", "0"))
+if not dev_channel_id:
+    raise ValueError("Channel for testing and dev purposes not set.")
+
 channel_id = int(os.getenv("CHANNEL", "0"))
 
 intents = discord.Intents.default()
@@ -33,7 +38,7 @@ intents.message_content = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 async def is_in_correct_channel(ctx):
-    if ctx.channel.id == channel_id or ctx.channel.id == 524522932823785485:
+    if ctx.channel.id == channel_id or ctx.channel.id == dev_channel_id:
         return True
     else:
         # Notify the user they are in the wrong channel
@@ -50,6 +55,7 @@ async def setup_bot():
     await bot.add_cog(HistoricalResults(bot))
     await bot.add_cog(TeamDisplaySystem(bot))
     await bot.add_cog(UnitStatsComparisonCog(bot))
+    await bot.add_cog(LandGuidePlaylist(bot))
 
 @bot.event
 async def on_ready():

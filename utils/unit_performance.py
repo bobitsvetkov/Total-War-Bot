@@ -94,3 +94,15 @@ def make_hashable_unit(unit: dict) -> Tuple[Tuple[str, Any], ...]:
         return item
 
     return tuple(sorted((k, make_hashable(v)) for k, v in unit.items()))
+
+
+def calculate_all_faction_stats(factions: Dict[str, Any]) -> Dict[str, Dict[str, float]]:
+    """Calculate and return stats for all factions."""
+    all_factions_stats = {}
+
+    for faction_name, faction_units in factions.items():
+        units_tuple = tuple(make_hashable_unit(unit) for unit in faction_units)
+        faction_stats = analyze_faction_weights(units_tuple, faction_name)
+        all_factions_stats[faction_name] = faction_stats
+
+    return all_factions_stats

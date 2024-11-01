@@ -5,7 +5,7 @@ import textwrap
 from concurrent.futures import ThreadPoolExecutor
 from utils.data_loader import load_unit_data
 from utils.gemini_prompt import generate_analysis
-from utils.unit_performance import make_hashable_unit, analyze_faction_weights
+from utils.unit_performance import make_hashable_unit, analyze_faction_weights, calculate_all_faction_stats
 
 UnitData = Dict[str, Any]
 FactionData = Dict[str, List[UnitData]]
@@ -41,7 +41,9 @@ class FactionAnalysisBot(commands.Cog):
 
         units_tuple = tuple(make_hashable_unit(unit) for unit in self.factions[faction_name])
         stats = analyze_faction_weights(units_tuple, faction_name)
-        analysis = generate_analysis(faction_name, stats)
+        logging.info(f"Factions structure: {self.factions}")
+        all_factions_stats = calculate_all_faction_stats(self.factions)
+        analysis = generate_analysis(faction_name, stats, all_factions_stats)
         self.analysis_cache[faction_name] = analysis
         return analysis
 

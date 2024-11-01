@@ -1,4 +1,4 @@
-from typing import Dict, List
+from typing import Dict, List, Optional
 from discord.ext import commands
 from utils.unit_performance import make_hashable_unit, analyze_faction_weights
 from utils.data_loader import load_unit_data
@@ -54,8 +54,19 @@ class FactionComparisonBot(commands.Cog):
         )
         return comparison + description
 
-    @commands.command(name='faction_compare')
-    async def faction_compare_command(self, ctx: commands.Context, *, factions: str):
+    @commands.command(name='faction_comparison')
+    async def faction_compare_command(self, ctx: commands.Context, *, factions: Optional[str] = None):
+        guidance_message = ("Please provide two factions to compare using one of these formats:\n"
+                        "- `!faction_comparison Faction1 vs Faction2`\n"
+                        "- `!faction_comparison Faction1 and Faction2`\n"
+                        "- `!faction_comparison Faction1, Faction2`\n"
+                        "Example: `!faction_comparison Odrysian Kingdom vs Rome`")
+    
+        if not factions:
+            await ctx.send(guidance_message)
+            return
+
+        # Parse the factions based on common conjunctions
         factions_lower = factions.lower()
         if ' vs ' in factions_lower:
             faction1_name, faction2_name = factions.split(' vs ', 1)
@@ -68,15 +79,12 @@ class FactionComparisonBot(commands.Cog):
             if len(parts) == 2:
                 faction1_name, faction2_name = parts
             else:
-                await ctx.send("Please provide two factions to compare using one of these formats:\n"
-                               "- `!faction_compare Faction1 vs Faction2`\n"
-                               "- `!faction_compare Faction1 and Faction2`\n"
-                               "- `!faction_compare Faction1, Faction2`\n"
-                               "Example: `!faction_compare Odrysian Kingdom vs Rome`")
+                await ctx.send(guidance_message)
                 return
 
         faction1_name = faction1_name.strip()
         faction2_name = faction2_name.strip()
 
+        # Run the comparison and send the result
         comparison_result = await self.compare_factions(faction1_name, faction2_name)
         await ctx.send(comparison_result)

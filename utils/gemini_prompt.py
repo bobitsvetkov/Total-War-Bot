@@ -15,6 +15,8 @@ def generate_analysis(faction_name: str, stats: Dict[str, float]) -> str:
     survivability_desc = interpret_score(stats['survivability'], "Survivability")
     melee_strength_desc = interpret_score(stats['melee_strength'], "Melee")
     ranged_strength_desc = interpret_score(stats['ranged_strength'], "Ranged")
+    cavalry_prowess_desc = interpret_score(stats['cavalry_prowess'], "Cavalry Prowess")
+    pilla_prowess_desc = interpret_score(stats['pilla_prowess'], "Pilla Prowess")
 
     prompt = (
     f"Provide a detailed analysis of the {faction_name} faction in Rome 2 Total War Multiplayer Competitive Battles. "
@@ -22,8 +24,8 @@ def generate_analysis(faction_name: str, stats: Dict[str, float]) -> str:
     f"- **Survivability** ({stats['survivability']}): {survivability_desc} - Indicates the faction's durability (armor, health, morale).\n"
     f"- **Melee Strength** ({stats['melee_strength']}): {melee_strength_desc} - Reflects hand-to-hand combat capability.\n"
     f"- **Ranged Strength** ({stats['ranged_strength']}): {ranged_strength_desc} - Measures effectiveness with ranged units.\n"
-    f"- **Cavalry Prowess** ({stats['cavalry_prowess']}): Assesses cavalry effectiveness in impact damage and overall combat effectiveness.\n"
-    f"- **Pilla Prowess** ({stats['pilla_prowess']}): Indicates efficiency of pilla-throwing units to disrupt enemy lines.\n\n"
+    f"- **Cavalry Prowess** ({stats['cavalry_prowess']}): {cavalry_prowess_desc} - Assesses cavalry effectiveness in impact damage and overall combat effectiveness.\n"
+    f"- **Pilla Prowess** ({stats['pilla_prowess']}): {pilla_prowess_desc} - Indicates efficiency of pilla-throwing units to disrupt enemy lines.\n\n"
     "Based on these scores, explain the best strategies for leveraging this faction’s strengths and mitigating its weaknesses. Keep the analysis concise and provide actionable gameplay advice."
 )
     

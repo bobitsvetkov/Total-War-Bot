@@ -3,7 +3,9 @@ def interpret_score(stat_value: float, stat_type: str) -> str:
     thresholds = {
         "Survivability": [(0, "very fragile"), (30.00, "fragile"), (50, "adequate"), (70, "resilient"), (90, "formidable"), (100, "unbreakable")],
         "Melee": [(0, "very underpowered"), (30.00, "underpowered"), (50, "balanced"), (70, "potent"), (90, "dominant"), (100, "unstoppable")],
-        "Ranged": [(0, "very limited"), (30.00, "limited"), (50, "effective"), (70, "deadly"), (90, "lethal"), (100, "masterful")]
+        "Ranged": [(0, "very limited"), (30.00, "limited"), (50, "effective"), (70, "deadly"), (90, "lethal"), (100, "masterful")],
+        "Cavalry Prowess": [(0, "ineffective"), (30.00, "below average"), (50, "average"), (70, "strong"), (90, "powerful"), (100, "unstoppable")],
+        "Pilla Prowess": [(0, "very limited"), (30.00, "limited"), (50, "average"), (70, "impactful"), (90, "devastating"), (100, "overwhelming")]
     }
     
     for threshold, descriptor in thresholds.get(stat_type, []):

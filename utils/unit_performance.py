@@ -1,7 +1,6 @@
 from functools import lru_cache
 from typing import Dict, Any, Tuple
 import logging
-import json
 from utils.data_loader import load_factions_from_data, load_faction_modifiers
 
 factions = load_factions_from_data('data/units_stats.json')
@@ -30,7 +29,7 @@ def analyze_faction_weights(faction_units: Tuple[Dict[str, Any]], faction_name: 
     "cavalry_prowess": 0.0,
     "pilla_prowess": 0.0
 }
-    
+
     # Convert tuple of units to list of dicts
     faction_units_dicts = [dict(unit) for unit in faction_units]
     total_units = len(faction_units_dicts)

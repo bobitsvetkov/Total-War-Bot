@@ -25,10 +25,8 @@ class TeamRecordingSystem(commands.Cog):
         expected_winner = self.calculate_expected_score(winning_team["Elo Rating"], losing_team["Elo Rating"])
         expected_loser = self.calculate_expected_score(losing_team["Elo Rating"], winning_team["Elo Rating"])
 
-        # Apply multiplier if it's a playoff match
         adjustment = self.k_factor * playoff_multiplier
 
-        # Update ratings
         winning_team["Elo Rating"] += adjustment * (1 - expected_winner)
         losing_team["Elo Rating"] += adjustment * (0 - expected_loser)
 
@@ -60,10 +58,9 @@ class TeamRecordingSystem(commands.Cog):
             }
             self.unit_data["teams"].append(new_team)
 
-    @commands.command(name='record_match')
+    @commands.command(name='record_match', help = 'Record the result of a match between two teams, creating teams if they don`t exist')
     @commands.is_owner()
     async def record_match(self, ctx, match_type: str, *, match_details: str):
-        """Record the result of a match between two teams, creating teams if they don't exist"""
         try:
             logging.debug(f"Starting record_match with input: {match_type}, {match_details}")
 

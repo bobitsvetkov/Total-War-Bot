@@ -3,7 +3,7 @@ from discord.ext import commands
 from utils.unit_performance import make_hashable_unit, analyze_faction_weights
 from utils.data_loader import load_unit_data
 
-class FactionComparisonBot(commands.Cog):
+class FactionComparison(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.unit_data = load_unit_data()
@@ -54,14 +54,13 @@ class FactionComparisonBot(commands.Cog):
         )
         return comparison + description
 
-    @commands.command(name='faction_comparison')
+    @commands.command(name='faction_comparison', help = 'Compare the stats between 2 factions')
     async def faction_compare_command(self, ctx: commands.Context, *, factions: Optional[str] = None):
         guidance_message = ("Please provide two factions to compare using one of these formats:\n"
                         "- `!faction_comparison Faction1 vs Faction2`\n"
                         "- `!faction_comparison Faction1 and Faction2`\n"
                         "- `!faction_comparison Faction1, Faction2`\n"
                         "Example: `!faction_comparison Odrysian Kingdom vs Rome`")
-    
         if not factions:
             await ctx.send(guidance_message)
             return

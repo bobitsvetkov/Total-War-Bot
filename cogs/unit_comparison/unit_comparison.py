@@ -7,7 +7,7 @@ import numpy as np
 from io import BytesIO
 from utils.data_loader import load_unit_data
 
-class UnitStatsComparisonCog(commands.Cog):
+class UnitStatsComparison(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.unit_data = load_unit_data()
@@ -74,9 +74,8 @@ class UnitStatsComparisonCog(commands.Cog):
         custom_legend_labels = [f"{unit1['Unit']} (Green)", f"{unit2['Unit']} (Blue)"]
         ax.legend(custom_legend_labels, loc='upper right', fontsize=12, frameon=False)
 
-    @commands.command(name='compare_stats')
+    @commands.command(name='compare_stats', help='Compare damage stats of two units')
     async def compare_stats_command(self, ctx: commands.Context, *, units: str):
-        """Compare damage stats of two units."""
         unit1_name, unit2_name = self.parse_unit_names(units)
         if not unit1_name or not unit2_name:
             await ctx.send("Please provide two units to compare using one of these formats:\n"

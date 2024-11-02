@@ -74,7 +74,7 @@ class HistoricalResults(commands.Cog):
         return sorted(leaderboard, key=lambda x: x[metric_key], reverse=True)
 
     def get_player_history(self, player_name: str) -> Optional[dict]:
-        """Retrieve a player's historical data by name."""
+        """Retrieve a player's historical data by name"""
         players_data = load_player_data()
         player = next((p for p in players_data if p['Player'].lower() == player_name.lower()), None)
         if player:
@@ -96,7 +96,7 @@ class HistoricalResults(commands.Cog):
             )
         await ctx.send(embed=embed)
 
-    @commands.command(name='player_history')
+    @commands.command(name='player_history', help='Display the historical results and achievent of a specific player')
     async def show_player_history(self, ctx, *, player_name: str):
         history = self.get_player_history(player_name)
         if not history:
@@ -111,17 +111,17 @@ class HistoricalResults(commands.Cog):
         embed.add_field(name="Rating", value=rating, inline=False)
         await ctx.send(embed=embed)
 
-    @commands.command(name='historical_leaderboard')
+    @commands.command(name='historical_leaderboard', help = 'Display the players with the highest rating')
     async def show_leaderboard(self, ctx):
         leaderboard = self.generate_leaderboard()
         await self.display_leaderboard(ctx, "Top Players Leaderboard", leaderboard, "Rating")
 
-    @commands.command(name='win_percentage_leaderboard')
+    @commands.command(name='win_percentage_leaderboard', help = 'Display the players with the highest win rate')
     async def win_percentage_leaderboard(self, ctx):
         leaderboard = self.generate_metric_leaderboard("Win %")
         await self.display_leaderboard(ctx, "Top Players by Win %", leaderboard, "Win %")
 
-    @commands.command(name='kd_ratio_leaderboard')
+    @commands.command(name='kd_ratio_leaderboard', help = 'Display the players with the highest k/d ratio')
     async def kd_ratio_leaderboard(self, ctx):
         leaderboard = self.generate_metric_leaderboard("K/D ratio")
         await self.display_leaderboard(ctx, "Top Players by K/D Ratio", leaderboard, "K/D ratio")

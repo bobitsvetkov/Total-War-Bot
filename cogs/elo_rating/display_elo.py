@@ -1,23 +1,17 @@
-import json
-import os
 import logging
 import discord
 from discord.ext import commands
+from utils.data_loader import load_elo_data
 
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 class TeamDisplaySystem(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        self.json_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), '..', 'data', 'elo_rating.json')
+        self.json_path = load_elo_data()
 
-        # Load the initial data from the JSON file
-        with open(self.json_path) as f:
-            self.unit_data = json.load(f)
-
-    @commands.command(name='display_team_elo')
+    @commands.command(name='display_team_elo', help = 'Display the top 10 teams by Elo rating in an embed')
     async def show_top_teams(self, ctx):
-        """Display the top 10 teams by Elo rating in an embed"""
         try:
             teams = self.unit_data["teams"]
 

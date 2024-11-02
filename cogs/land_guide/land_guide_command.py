@@ -3,6 +3,7 @@ from googleapiclient.discovery import build # type: ignore
 import asyncio
 import os
 from dotenv import load_dotenv
+from functools import lru_cache
 
 load_dotenv("secret.env")
 YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")
@@ -16,7 +17,7 @@ class LandGuidePlaylist(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(name="land_guide_playlist")
+    @commands.command(name="land_guide_playlist", help='Display a playlist with guide videos about Land Battles')
     async def land_guide_playlist(self, ctx):
         await ctx.send("Please enter the faction you need help with:")
 
@@ -41,7 +42,7 @@ class LandGuidePlaylist(commands.Cog):
 
         except asyncio.TimeoutError:
             await ctx.send("You didn't respond in time. Please try again.")
-
+    @lru_cache(maxsize=32)
     def search_youtube_for_faction(self, faction_name, playlist_id):
         request = youtube.playlistItems().list(
             part="snippet",

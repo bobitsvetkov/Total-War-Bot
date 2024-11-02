@@ -8,7 +8,7 @@ logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %
 class TeamDisplaySystem(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        self.json_path = load_elo_data()
+        self.unit_data = load_elo_data()
 
     @commands.command(name='display_team_elo', help = 'Display the top 10 teams by Elo rating in an embed')
     async def show_top_teams(self, ctx):

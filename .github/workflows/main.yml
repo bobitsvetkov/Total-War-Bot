@@ -30,5 +30,4 @@ jobs:
 
       - name: Deploy application
         run: |
-          echo "Deploying application to Google Cloud"
-          gcloud app deploy --quiet
+          python main.py

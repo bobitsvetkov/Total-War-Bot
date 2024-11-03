@@ -1,6 +1,7 @@
 from discord.ext import commands
 import logging
 from utils.data_loader import load_unit_data
+from typing import Optional
 
 logging.basicConfig(level=logging.INFO)
 
@@ -19,8 +20,12 @@ class UnitStats(commands.Cog):
         self.bot = bot
 
     @commands.command(name='unit_stats', help='Get information for a specified unit')
-    async def unit_stats(self, ctx, *, unit_name: str):
+    async def unit_stats(self, ctx, *, unit_name: Optional[str] = None):
         logging.info(f"Received unit name: '{unit_name}'")
+        guidance_message = "Please specify a unit to see its stats. Example: `!unit_stats Eastern Cataphracts`"
+        if not unit_name:
+            await ctx.send(guidance_message)
+            return
         unit_info = query_unit_stats(unit_name)
         if unit_info == "Unit not found":
             await ctx.send(unit_info)

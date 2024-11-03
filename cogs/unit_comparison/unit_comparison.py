@@ -4,6 +4,7 @@ import logging
 import matplotlib.pyplot as plt
 import matplotlib.axes
 import numpy as np
+from typing import Optional
 from io import BytesIO
 from utils.data_loader import load_unit_data
 
@@ -75,16 +76,37 @@ class UnitStatsComparison(commands.Cog):
         ax.legend(custom_legend_labels, loc='upper right', fontsize=12, frameon=False)
 
     @commands.command(name='compare_stats', help='Compare damage stats of two units')
-    async def compare_stats_command(self, ctx: commands.Context, *, units: str):
-        unit1_name, unit2_name = self.parse_unit_names(units)
-        if not unit1_name or not unit2_name:
-            await ctx.send("Please provide two units to compare using one of these formats:\n"
-                           "- `!compare_stats Unit1 vs Unit2`\n"
-                           "- `!compare_stats Unit1 and Unit2`\n"
-                           "- `!compare_stats Unit1, Unit2`\n"
-                           "Example: `!compare_stats Evocati Cohort vs Sword Followers`")
+    async def compare_stats_command(self, ctx: commands.Context, *, units: Optional[str] = None):
+        guidance_message = ("Please provide two units to compare using one of these formats:\n"
+                            "- `!compare_stats Unit1 vs Unit2`\n"
+                            "- `!compare_stats Unit1 and Unit2`\n"
+                            "- `!compare_stats Unit1, Unit2`\n"
+                            "Example: `!compare_stats Evocati Cohort vs Sword Followers`")
+        
+        if not units:
+            await ctx.send(guidance_message)
             return
 
+        # Parse unit names based on common conjunctions
+        units_lower = units.lower()
+        if ' vs ' in units_lower:
+            unit1_name, unit2_name = units.split(' vs ', 1)
+        elif ' versus ' in units_lower:
+            unit1_name, unit2_name = units.split(' versus ', 1)
+        elif ' and ' in units_lower:
+            unit1_name, unit2_name = units.rsplit(' and ', 1)
+        else:
+            parts = [p.strip() for p in units.split(',')]
+            if len(parts) == 2:
+                unit1_name, unit2_name = parts
+            else:
+                await ctx.send(guidance_message)
+                return
+
+        unit1_name = unit1_name.strip()
+        unit2_name = unit2_name.strip()
+
+        # Query and validate unit stats
         unit1 = self.query_unit_stats(unit1_name)
         unit2 = self.query_unit_stats(unit2_name)
 
@@ -95,21 +117,7 @@ class UnitStatsComparison(commands.Cog):
             await ctx.send(f"Unit not found: {unit2_name}")
             return
 
+        # Run the comparison and send the result
         comparison_image = self.compare_stats(unit1, unit2)
         file = discord.File(fp=comparison_image, filename='stats_comparison.png')
         await ctx.send(file=file)
-
-    def parse_unit_names(self, units: str):
-        """Parse unit names from the input."""
-        units_lower = units.lower()
-        if ' vs ' in units_lower:
-            return units.split(' vs ', 1)
-        elif ' versus ' in units_lower:
-            return units.split(' versus ', 1)
-        elif ' and ' in units_lower:
-            return units.split(' and ', 1)
-        else:
-            parts = [p.strip() for p in units.split(',')]
-            if len(parts) == 2:
-                return parts
-        return None, None

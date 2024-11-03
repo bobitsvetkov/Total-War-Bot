@@ -1,6 +1,6 @@
 from discord.ext import commands
 import logging
-from typing import Dict, List, Any
+from typing import Dict, List, Any, Optional
 import textwrap
 from concurrent.futures import ThreadPoolExecutor
 from utils.data_loader import load_unit_data
@@ -47,8 +47,14 @@ class FactionAnalysisBot(commands.Cog):
         return analysis
 
     @commands.command(name='faction_analysis', help='Analyze the strengths and weaknesses of a faction.')
-    async def faction_analysis_command(self, ctx: commands.Context, *, faction_name: str) -> None:
+    async def faction_analysis_command(self, ctx: commands.Context, *, faction_name: Optional[str] = None) -> None:
         """Command handler to analyze a faction's strengths and weaknesses."""
+        guidance_message = "Please specify a faction name to analyze. Example: `!faction_analysis Rome`"
+    
+        # Check if faction name is provided
+        if not faction_name:
+            await ctx.send(guidance_message)
+            return
         if faction_name not in self.factions:
             await ctx.send(f"Faction '{faction_name}' not found.")
             return

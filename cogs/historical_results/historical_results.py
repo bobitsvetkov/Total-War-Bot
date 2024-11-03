@@ -97,7 +97,10 @@ class HistoricalResults(commands.Cog):
         await ctx.send(embed=embed)
 
     @commands.command(name='player_history', help='Display the historical results and achievent of a specific player')
-    async def show_player_history(self, ctx, *, player_name: str):
+    async def show_player_history(self, ctx, *, player_name: Optional[str] = None):
+        if not player_name:
+            await ctx.send("Please enter a player's name. Example: !player_history Hyena")
+            return
         history = self.get_player_history(player_name)
         if not history:
             await ctx.send(f"No historical data found for player '{player_name}'!")

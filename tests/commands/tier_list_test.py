@@ -5,13 +5,6 @@ from discord.ext import commands
 from cogs.tier_list.tier_list import TierList
 import os
 
-
-@pytest.fixture
-def bot():
-    bot = MagicMock(spec=commands.Bot)
-    return bot
-
-
 @pytest.fixture
 def cog(bot):
     return TierList(bot)
@@ -23,8 +16,6 @@ def ctx():
     ctx.send = AsyncMock()
     return ctx
 
-
-# Test when the image exists
 @pytest.mark.asyncio
 @patch("os.path.exists")
 async def test_send_tierlist_image_found(mock_exists, cog, ctx):
@@ -49,7 +40,6 @@ async def test_send_tierlist_image_found(mock_exists, cog, ctx):
     assert call_args.filename == "3v3 Tier List.png"
 
 
-# Test when the image does not exist
 @pytest.mark.asyncio
 @patch("os.path.exists")
 async def test_send_tierlist_image_not_found(mock_exists, cog, ctx):

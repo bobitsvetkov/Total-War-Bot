@@ -9,10 +9,6 @@ def all_units_data():
     return load_unit_data()
 
 @pytest.fixture
-def bot():
-    return Mock(spec=commands.Bot)
-
-@pytest.fixture
 def cog(bot):
     return UnitStats(bot)
 

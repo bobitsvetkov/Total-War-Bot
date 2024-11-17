@@ -2,14 +2,6 @@ import pytest
 from unittest.mock import patch, MagicMock
 from discord.ext import commands
 from cogs.unit_comparison.unit_comparison import UnitStatsComparison
-from utils.intents import setup_intents
-
-
-@pytest.fixture
-def bot():
-    intents = setup_intents()
-    return commands.Bot(intents=intents, command_prefix="!")
-
 
 @pytest.fixture
 def cog(bot):

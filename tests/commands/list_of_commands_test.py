@@ -4,10 +4,6 @@ from discord.ext import commands
 from cogs.commands.commands_list import CommandsList
 
 @pytest.fixture
-def bot():
-    return Mock(spec=commands.Bot)
-
-@pytest.fixture
 def cog(bot):
     return CommandsList(bot)
 

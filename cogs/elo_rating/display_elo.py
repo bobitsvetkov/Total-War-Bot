@@ -14,9 +14,13 @@ class TeamDisplaySystem(commands.Cog):
     async def show_top_teams(self, ctx):
         try:
             teams = self.unit_data["teams"]
+            
+            if not teams:
+                embed = discord.Embed(title="Top 10 Teams by Elo Rating", description="No teams available.", color=discord.Color.red())
+                await ctx.send(embed=embed)
+                return
 
             sorted_teams = sorted(teams, key=lambda x: x["Elo Rating"], reverse=True)[:10]
-
             embed = discord.Embed(title="Top 10 Teams by Elo Rating", color=discord.Color.blue())
             for team in sorted_teams:
                 embed.add_field(name=team["Team Name"], value=f"Elo Rating: {team['Elo Rating']:.2f}", inline=False)

@@ -8,6 +8,7 @@ async def setup_cogs(bot):
     from cogs.historical_results.historical_results import HistoricalResults
     from cogs.elo_rating.display_elo import TeamDisplaySystem
     from cogs.land_guide.land_guide_command import LandGuidePlaylist
+    from cogs.elo_rating.record_game_elo import TeamRecordingSystem
 
     cogs = [
         FactionAnalysisBot(bot),
@@ -18,7 +19,8 @@ async def setup_cogs(bot):
         HistoricalResults(bot),
         TeamDisplaySystem(bot),
         UnitStatsComparison(bot),
-        LandGuidePlaylist(bot)
+        LandGuidePlaylist(bot),
+        TeamRecordingSystem(bot),
     ]
 
     for cog in cogs:

@@ -2,7 +2,7 @@
     "teams": [
         {
             "Team Name": "Perkele",
-            "Elo Rating": 1063.0784752306026,
+            "Elo Rating": 1078.539334791222,
             "Matches": [
                 {
                     "Opponent": "Parthia's Finest",
@@ -138,12 +138,22 @@
                     "Opponent": "Warrior Snails",
                     "Result": "Loss",
                     "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Parthia's Finest",
+                    "Result": "Loss",
+                    "Date": "2025-07-05"
+                },
+                {
+                    "Opponent": "Parthia's Finest",
+                    "Result": "Win",
+                    "Date": "2025-07-05"
                 }
             ]
         },
         {
             "Team Name": "Parthia's Finest",
-            "Elo Rating": 1162.055338109416,
+            "Elo Rating": 1146.5944785487966,
             "Matches": [
                 {
                     "Opponent": "Perkele",
@@ -274,6 +284,16 @@
                     "Opponent": "I for Imperium",
                     "Result": "Loss",
                     "Date": "2024-10-28"
+                },
+                {
+                    "Opponent": "Perkele",
+                    "Result": "Win",
+                    "Date": "2025-07-05"
+                },
+                {
+                    "Opponent": "Perkele",
+                    "Result": "Loss",
+                    "Date": "2025-07-05"
                 }
             ]
         },

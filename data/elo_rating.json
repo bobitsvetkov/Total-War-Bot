@@ -95,16 +95,6 @@
                     "Date": "2024-10-28"
                 },
                 {
-                    "Opponent": "Parthias' Finest",
-                    "Result": "Loss",
-                    "Date": "2024-10-28"
-                },
-                {
-                    "Opponent": "Parthias' Finest",
-                    "Result": "Win",
-                    "Date": "2024-10-28"
-                },
-                {
                     "Opponent": "Parthia's Finest",
                     "Result": "Loss",
                     "Date": "2024-10-28"
@@ -3435,22 +3425,6 @@
                 {
                     "Opponent": "Legitimately Average 2.0",
                     "Result": "Win",
-                    "Date": "2024-10-28"
-                }
-            ]
-        },
-        {
-            "Team Name": "Parthias' Finest",
-            "Elo Rating": 1002.9925139992438,
-            "Matches": [
-                {
-                    "Opponent": "Perkele",
-                    "Result": "Win",
-                    "Date": "2024-10-28"
-                },
-                {
-                    "Opponent": "Perkele",
-                    "Result": "Loss",
                     "Date": "2024-10-28"
                 }
             ]
